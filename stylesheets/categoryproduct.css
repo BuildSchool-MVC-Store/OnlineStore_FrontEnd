@@ -36,16 +36,11 @@ footer {
     color: rgb(255, 254, 246);
 }
 
-.categoryname {
-    font-weight: bold;
-
-}
-
 .categorylist {
+    font-weight: bold;
     list-style: none;
+    line-height: 40px;
 }
-
-
 
 .side>ul {
     padding-left: 15px;
@@ -55,8 +50,6 @@ footer {
 .productlist {
     list-style: none;
     float: left;
-    margin-left: 10px;
-    margin-bottom: 10px;
 }
 
 footer {
@@ -65,4 +58,14 @@ footer {
 
 .main-menu {
     margin-bottom: 20px;
+}
+
+.productname {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.productprice {
+    text-align: center;
 }
