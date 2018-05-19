@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>女裝</title>
+    <title>category</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,35 +10,108 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/Modals.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/main.css">
     <link rel="stylesheet" href="stylesheets/categoryproduct.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Jaldi' rel='stylesheet'>
 </head>
+<div class="modal fade" id="signinmodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modaltitle">
+            <div class="modal-header">
+                <h5 class="modal-title">登入
+                    <small id="helpId" class="form-text text-muted">LOGIN</small>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-8 mx-auto">
+                        <div class="form-group" id="account">
+                            <label>帳號&nbsp;
+                                <span class="signword">Account</span>
+                            </label>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                            <label class="password">密碼&nbsp;
+                                <span class="signword">Password</span>
+                            </label>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">登入</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="registermodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modaltitle">
+            <div class="modal-header">
+                <h5 class="modal-title">註冊會員
+                    <small id="helpId" class="form-text text-muted">Register</small>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-8 mx-auto">
+                        <div class="form-group" id="account">
+                            <label>帳號&nbsp;
+                                <span class="signword">Account</span>
+                            </label>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                            <label class="password">密碼&nbsp;
+                                <span class="signword">Password</span>
+                            </label>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">註冊</a>
+                <a name="" id="" class="btn" href="#" role="button" data-dismiss="modal">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <body>
     <div class="container-fluid">
-        <div class="fixed-top" id="header">
+        <div class="header fixed-top">
             <div class="row">
                 <div class="col">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">會員登入</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">註冊會員</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">聯絡我們</a>
-                        </li>
-                    </ul>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col">
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <h2 class="title">Alan's Shop</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end topside">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#signinmodel">LOGIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#registermodel">REGISTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-basket fa-2x"></i>
                             </a>
                         </li>
                     </ul>
@@ -64,63 +137,138 @@
         </div>
     </div>
     <div class="container">
-        <div class="row" id="content">
-            <div class="col-2">
-                <div class="side">
-                    <ul>
-                        <li class="categorylist"><a href="#">TOP</a></li>
-                        <li class="categorylist"><a href="#">BOTTOM</a></li>
-                        <li class="categorylist"><a href="#">JUMPSUIT</a></li>
-                        <li class="categorylist"><a href="#">UNDERWEAR</a></li>
-                    </ul>
+        <!--內容-->
+        <div class="row catcontent">
+            <div class="col side">
+                <ul>
+                    <li>
+                        <a href="#">TOP</a>
+                    </li>
+                    <li>
+                        <a href="#">BOTTOM</a>
+                    </li>
+                    <li>
+                        <a href="#">JUMPSUIT</a>
+                    </li>
+                    <li>
+                        <a href="#">UNDERWEAR</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col main">
+                <a href="#">
+                    <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                </a>
+                <a href="#">
+                    <p>Product Name</p>
+                </a>
+                <p>$290</p>
                 
-                </div>
             </div>
-            <div class="col-10">
-                <div class="main">
-                    <ul>
-                        <li class="productlist">
-                            <a href="#">
-                                <img src="images/Women/251-41.jpeg" width="220px" class="img-fluid" alt="">
-                            </a>
-                            <a href="#"><p class="productname">商品名稱</p></a>
-                            <p class="productprice">$290</p>
-                        </li>
-                        <li class="productlist">
-                            <a href="#">
-                                <img src="images/Women/251-32.jpeg" width="220px" class="img-fluid" alt="">
-                            </a>
-                            <a href="#"><p class="productname">商品名稱</p></a>
-                            <p class="productprice">$290</p>
-                        </li>
-                        <li class="productlist">
-                            <a href="#">
-                                <img src="images/Women/250-11.jpeg" width="220px" class="img-fluid" alt="">
-                            </a>
-                            <a href="#"><p class="productname">商品名稱</p></a>
-                            <p class="productprice">$290</p>
-                        </li>
-                        <li class="productlist">
-                            <a href="#">
-                                <img src="images/Women/063-71.jpeg" width="220px" class="img-fluid" alt="">
-                            </a>
-                            <a href="#"><p class="productname">商品名稱</p></a>
-                            <p class="productprice">$290</p>
-                        </li>
-                        <li class="productlist">
-                                <a href="#">
-                                    <img src="images/Women/063-71.jpeg" width="220px" class="img-fluid" alt="">
-                                </a>
-                                <a href="#"><p class="productname">商品名稱</p></a>
-                            <p class="productprice">$290</p>
-                            </li>
-                    </ul>
-                </div>
+            <div class="col main">
+                <a href="#">
+                    <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                </a>
+                <a href="#">
+                    <p class="productname">Product Name</p>
+                </a>
+                <p>$290</p>
             </div>
-
+            <div class="col main">
+                <a href="#">
+                    <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                </a>
+                <a href="#">
+                    <p class="productname">Product Name</p>
+                </a>
+                <p>$290</p>
+            </div>
+            <div class="col main">
+                <a href="#">
+                    <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                </a>
+                <a href="#">
+                    <p class="productname">Product Name</p>
+                </a>
+                <p>$290</p>
+            </div>
+            <div class="col-2">
+            </div>
+            <div class="col main">
+                <a href="#">
+                    <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                </a>
+                <a href="#">
+                    <p class="productname">Product Name</p>
+                </a>
+                <p>$290</p>
+            </div>
+            <div class="col main">
+                <a href="#">
+                    <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                </a>
+                <a href="#">
+                    <p class="productname">Product Name</p>
+                </a>
+                <p>$290</p>
+            </div>
+            <div class="col main">
+                <a href="#">
+                    <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                </a>
+                <a href="#">
+                    <p class="productname">Product Name</p>
+                </a>
+                <p>$290</p>
+            </div>
+            <div class="col main">
+                <a href="#">
+                    <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                </a>
+                <a href="#">
+                    <p class="productname">Product Name</p>
+                </a>
+                <p>$290</p>
+            </div>
+            <div class="col">
+                </div>
+                <div class="col main">
+                    <a href="#">
+                        <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                    </a>
+                    <a href="#">
+                        <p class="productname">Product Name</p>
+                    </a>
+                    <p>$290</p>
+                </div>
+                <div class="col main">
+                    <a href="#">
+                        <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                    </a>
+                    <a href="#">
+                        <p class="productname">Product Name</p>
+                    </a>
+                    <p>$290</p>
+                </div>
+                <div class="col main">
+                    <a href="#">
+                        <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                    </a>
+                    <a href="#">
+                        <p class="productname">Product Name</p>
+                    </a>
+                    <p>$290</p>
+                </div>
+                <div class="col main">
+                    <a href="#">
+                        <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
+                    </a>
+                    <a href="#">
+                        <p class="productname">Product Name</p>
+                    </a>
+                    <p>$290</p>
+                </div>
         </div>
-    </div>
-
     </div>
     <footer class="container-fluid">
         <div class="container">
@@ -129,15 +277,36 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <p class="footer-nav-link">關於我們</p>
+                                <p class="footer-nav-link">About Alan's Shop</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p class="footer-nav-link">購物說明</p>
+                                <p class="footer-nav-link">Shopping Details</p>
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div class="col-2 aboutus">
+                    <p>E-mail
+                    </p>
+                    <p>Phone
+                    </p>
+                    <p>Service Hours
+                    </p>
+                    </br>
+                </div>
+                <div class="col aboutus">
+                    <p>alansshop2018@gmail.com</p>
+                    <p>03-512-3456</p>
+                    <p>Monday to Friday 9:00-18:00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy; 2018</p>
+                </div>
+                <div class="col-2">
                     <a href="#">
                         <i class="fab fa-facebook fa-2x" style="color:white"></i>
                     </a>&nbsp;
@@ -148,27 +317,34 @@
                         <i class="fab fa-line fa-2x" style="color:white"></i>
                     </a>
                 </div>
-                <div class="col aboutus">
-                    <p>客服信箱 alansshop2018@gmail.com</p>
-                    <p>客服電話 03-512-3456</p>
-                    <p>週一至週五 9:00-18:00</p>
-                    </br>
+                <div class="col">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col aboutus">
-                    <p>Copyright &copy; 2018</p>
+                <div class="gototop js-top">
+                    <a href="#">
+                        <i class="fas fa-arrow-circle-up fa-2x"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script>
+        $.extend($.easing, {
+            easeOutExpo: function (x, t, b, c, d) {
+                return (t == d) ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
+            }
+        });
+        $(".gototop").click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 1000, "easeOutExpo");
+        });
+    </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
