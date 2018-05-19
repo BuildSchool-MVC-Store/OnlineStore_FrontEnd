@@ -1,71 +1,32 @@
-body {
-    font-family: Microsoft JhengHei;
-    color: #676D3E;
-    font-size: 15px;
-    background-color: rgb(255, 254, 250);
-}
-
-#header {
-    background-color: white;
-    border-bottom: 1px solid rgb(219, 219, 219);
-}
-
-.title {
-    font-family: Comic Sans MS, Comic Sans, cursive;
-}
-
-#content {
+.catcontent {
     margin-top: 200px;
-    width: 1200px;
+    width: 100%;
+    margin-bottom: 80px;
 }
 
-a {
-    color: #697259;
-}
-
-a:hover {
-    color: rgb(135, 145, 76);
-    text-decoration: none;
-}
-
-footer {
-    background-color: #697259;
-}
-
-.footer-nav-link {
-    color: rgb(255, 254, 246);
-}
-
-.categorylist {
+.side ul li {
     font-weight: bold;
     list-style: none;
-    line-height: 40px;
+    line-height: 36px;
 }
 
 .side>ul {
-    padding-left: 15px;
-    padding-bottom: 10px;
 }
 
-.productlist {
-    list-style: none;
-    float: left;
+.side>ul>li:hover {
+    position: relative;
+    right: 3px;
 }
 
-footer {
-    margin-top: 150px;
-}
-
-.main-menu {
-    margin-bottom: 20px;
-}
-
-.productname {
+.main {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
 }
 
-.productprice {
-    text-align: center;
+.main>a>p {
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.main>p {
+    margin-bottom: 40px;
 }
