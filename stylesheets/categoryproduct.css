@@ -10,8 +10,7 @@
     line-height: 36px;
 }
 
-.side>ul {
-}
+.side>ul {}
 
 .side>ul>li:hover {
     position: relative;
@@ -29,4 +28,13 @@
 
 .main>p {
     margin-bottom: 40px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-item{
+    width: 220px;
+    height: 350px;
 }
