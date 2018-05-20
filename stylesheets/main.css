@@ -332,3 +332,19 @@ p {
     padding-top: 10px;
 }
 
+.content {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.content>p {
+    margin-top: 150px;
+}
+
+.content>p>a {
+    margin-left: 430px;
+}
+
+#col1{
+    margin-left: 189px;
+}

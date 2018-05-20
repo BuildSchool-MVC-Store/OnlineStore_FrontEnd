@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Customer</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/Modals.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Jaldi' rel='stylesheet'>
+</head>
+<div class="modal fade" id="signinmodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modaltitle">
+            <div class="modal-header">
+                <h5 class="modal-title">登入
+                    <small id="helpId" class="form-text text-muted">LOGIN</small>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-8 mx-auto">
+                        <div class="form-group" id="account">
+                            <label>帳號&nbsp;
+                                <span class="signword">Account</span>
+                            </label>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                            <label class="password">密碼&nbsp;
+                                <span class="signword">Password</span>
+                            </label>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">登入</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="registermodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modaltitle">
+            <div class="modal-header">
+                <h5 class="modal-title">註冊會員
+                    <small id="helpId" class="form-text text-muted">Register</small>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-8 mx-auto">
+                        <div class="form-group" id="account">
+                            <label>帳號&nbsp;
+                                <span class="signword">Account</span>
+                            </label>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                            <label class="password">密碼&nbsp;
+                                <span class="signword">Password</span>
+                            </label>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">註冊</a>
+                <a name="" id="" class="btn" href="#" role="button" data-dismiss="modal">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+    <div class="container-fluid">
+        <div class="header fixed-top">
+            <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <h2 class="title">Alan's Shop</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <ul class="nav justify-content-end topside">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#signinmodel">LOGIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#registermodel">REGISTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-basket fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-menu">
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WOMEN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">MEN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">KIDS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row content">
+                    <div class="col content">
+                        <p>Hi, Alan
+                            <a href="#">
+                                <u>Log Out</u>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs content">
+                    <li class="nav-item" id="col1">
+                        <a class="nav-link active" data-toggle="tab" href="#home">個人資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu1">訂單</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="home" class="row tab-pane active">
+                        <div class="row mt-3 content">
+                            <div class="col-4">
+                                <b>姓名</b>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="row mt-3 content">
+                            <div class="col-4">
+                                <b>電話號碼(選填)</b>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="row mt-3 content">
+                            <div class="col-4">
+                                <b>EMAIL</b>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" aria-describedby="basic-addon3">
+                            </div>
+                        </div>
+                        <div class="row mt-3 content">
+                            <div class="col-4">
+                                <b>地址(選填)</b>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" aria-describedby="basic-addon4">
+                            </div>
+                        </div>
+                        <div class="row mt-3 content">
+                            <div class="col-4">
+                                <b>密碼</b>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" aria-describedby="basic-addon5">
+                            </div>
+                        </div>
+                        <div class="row mt-4 content">
+                            <div class="col-4">
+
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light">取消</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-info">儲存變更</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu1" class="row tab-pane fade">
+                        <div class="row mt-4 content text-center">
+                            <div class="col-3">
+                                <b>訂單號碼</b>
+                            </div>
+                            <div class="col-3">
+                                <b>訂單日期</b>
+                            </div>
+                            <div class="col-2">
+                                <b>合計</b>
+                            </div>
+                            <div class="col-3">
+                                <b>訂單狀態</b>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mt-3 content text-center">
+                            <div class="col-3">
+                                XXXXXXXX
+                            </div>
+                            <div class="col-3">
+                                2017-6-5
+                            </div>
+                            <div class="col-2">
+                                $8,787
+                            </div>
+                            <div class="col-3">
+                                送貨中
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                &nbsp;
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col aboutus">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p class="footer-nav-link">About Alan's Shop</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="footer-nav-link">Shopping Details</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2 aboutus">
+                    <p>E-mail
+
+                    </p>
+                    <p>Phone
+
+                    </p>
+                    <p>Service Hours
+
+                    </p>
+                    </br>
+                </div>
+                <div class="col aboutus">
+                    <p>alansshop2018@gmail.com</p>
+                    <p>03-512-3456</p>
+                    <p>Monday to Friday 9:00-18:00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy; 2018</p>
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <i class="fab fa-facebook fa-2x" style="color:white"></i>
+                    </a>&nbsp;
+                    <a href="#">
+                        <i class="fab fa-instagram fa-2x" style="color:white"></i>
+                    </a>&nbsp;
+                    <a href="#">
+                        <i class="fab fa-line fa-2x" style="color:white"></i>
+                    </a>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="gototop js-top">
+                    <a href="#">
+                        <i class="fas fa-arrow-circle-up fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+        $.extend($.easing, {
+            easeOutExpo: function (x, t, b, c, d) {
+                return (t == d) ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
+            }
+        });
+        $(".gototop").click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 1000, "easeOutExpo");
+        });
+    </script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
