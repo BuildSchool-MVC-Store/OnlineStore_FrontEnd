@@ -225,72 +225,63 @@ footer {
 }
 
 .step3 {
-    color: white;
-    background-color: #697259;
-    width: 250px;
-    height: 45px;
-    margin-top: 20px;
-    padding: 10px 10px;
-    font-size: 17px;
     position: relative;
-    text-align: center;
-    float: right;
-}
+    width: 170px;
+    height: 40px;
+    display: flex;
+    margin-left: 171px;
+    justify-content: center;
+    align-items: center;
+    color: #697259;
+    border: 2px solid #697259;
+  }
 
-.step3:before {
-    width: 0;
-    height: 0;
-    border-top: 22px solid transparent;
-    border-right: 22px solid #697259;
-    border-bottom: 22px solid transparent;
+  .step3:before {
     position: absolute;
-    top: 0;
-    left: -22px;
     content: '';
-}
-
-.step3:hover{
-    color:white;
-    background-color:#697259c9;
-}
-
-.step3:hover:before{
-    background-color:#697259c9;
-}
-
-.step4 {
+    width: 0;
+    height: 40px;
+    transition: 0.4s all ease;
+    background: #697259;
+    right: 0;
+    z-index: -1;
+  }
+  .step3:hover {
     color: white;
-    background-color: #697259;
-    width: 250px;
-    height: 45px;
-    margin-top: 20px;
-    padding: 10px 10px;
-    font-size: 17px;
+  }
+  .step3:hover:before {
+    width: 100%;
+    transition: 0.4s all ease;
+  }
+
+  .step4 {
     position: relative;
-    text-align: center;
-    float: right;
-}
-
-.step4:before {
-    width: 0;
-    height: 0;
-    border-top: 22px solid transparent;
-    border-left: 22px solid #697259;
-    border-bottom: 22px solid transparent;
+    width: 170px;
+    height: 40px;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #697259;
+    border: 2px solid #697259;
+  }
+  .step4:before {
     position: absolute;
-    top: 0;
-    right: -22px;
     content: '';
-}
-
-.step4:hover{
-    color:white;
-    background-color:#697259c9;
-}
-
-.step4:hover:before{
-    background-color:#697259c9;
-}
+    width: 0;
+    height: 40px;
+    transition: 0.4s all ease;
+    background: #697259;
+    left: 0;
+    z-index: -1;
+  }
+  .step4:hover {
+    color: white;
+  }
+  .step4:hover:before {
+    width: 100%;
+    transition: 0.4s all ease;
+  }
 
 .col>i:hover {
     color: rgb(135, 145, 76);
