@@ -144,8 +144,8 @@
     <div class="container"> <!--內容-->
         <div class="row cartcontant">
             <div class="col">
-                <a herf="">HOME&nbsp;&#62;</a>
-                <a herf="">BAG</a>
+                <a href="#" class="a">HOME</a>&nbsp;&nbsp;&#62;&nbsp;
+                <a class="a">BAG</a>
             </div>
         </div>
         <div class="row">
@@ -190,7 +190,7 @@
                 </p>
             </div>
             <div class="col center">
-                <select id="quantity_option" class="form-control offset-4" style="width:70px;">
+                <select id="quantity_option" class="offset-4" style="width:70px;">
                 </select>
             </div>
             <div class="col center">
@@ -212,7 +212,7 @@
         <div class="row mt-3 mb-3">
             <div class="col center text-right">
                 <span>運送方式 / Shipping</span>
-                <select id="inputState" class="form-control" style="width:160px; margin-top:8px;">
+                <select id="inputState" style="width:160px; margin-top:8px; outline: none !important;">
                     <option selected>Choose...</option>
                     <option>宅配</option>
                     <option>到店取貨</option>
@@ -223,7 +223,7 @@
             </div>
             <div class="col center text-right">
                 <span>付款方式 / Payment</span>
-                <select id="inputState" class="form-control" style="width:160px; margin-top:8px;">
+                <select id="inputState" style="width:160px; margin-top:8px;">
                     <option selected>Choose...</option>
                     <option>貨到付款</option>
                     <option>超商取貨付款</option>
@@ -313,6 +313,12 @@
                 scrollTop: 0
             }, 1000, "easeOutExpo");
         });
+
+          for (var i = 1; i <= 20; i++) {
+             var option = $("<option>");
+             option.html(i.toString());
+             $("#quantity_option").append(option);
+        } 
     </script>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

@@ -22,7 +22,8 @@ body {
 }
 
 .cartcontant{
-   padding-top:170px;  
+   position: relative;
+   padding-top: 180px;  
 }
 
 .mainimage {
@@ -216,6 +217,15 @@ footer a:hover {
     color:#697259;
 }
 
+.a{
+    color:#697259;
+}
+
+.a:hover{
+    text-decoration:none;
+    color: rgb(135, 145, 76);
+}
+
 .col > a > i{
     color: #697259;
 }
@@ -227,6 +237,13 @@ footer a:hover {
 .center > span{
     float: left; 
     padding: 10px 10px;
+}
+
+select{
+    border-radius: 5px;
+    border:1px solid lightgray;
+    color:gray;
+    outline: none !important;
 }
 
 .step3 {
