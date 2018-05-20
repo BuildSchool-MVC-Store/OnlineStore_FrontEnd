@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Shopping_Cart</title>
+    <title>shoppingcart</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a name="" id="signin" class="botton" href="#" role="button" data-dismiss="modal">登入</a>
+                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">登入</a>
             </div>
         </div>
     </div>
@@ -79,13 +79,12 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a name="" id="signin" class="botton" href="#" role="button" data-dismiss="modal">註冊</a>
-                <a name="" id="" class="botton" href="#" role="button" data-dismiss="modal">取消</a>
+                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">註冊</a>
+                <a name="" id="" class="btn" href="#" role="button" data-dismiss="modal">取消</a>
             </div>
         </div>
     </div>
 </div>
-
 <body>
     <div class="container-fluid">
         <div class="header fixed-top">
@@ -102,7 +101,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="col">
                     <ul class="nav justify-content-end topside">
                         <li class="nav-item">
@@ -113,7 +111,12 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-shopping-basket fa-2x"></i>
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-basket"></i>
                             </a>
                         </li>
                     </ul>
@@ -138,7 +141,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container"> <!--內容-->
         <div class="row content">
             <div class="col">
                 <a herf="">HOME&nbsp;&#62;</a>
@@ -243,18 +246,12 @@
         <div class="container">
             <div class="row">
                 <div class="col aboutus">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p class="footer-nav-link">About Alan's Shop</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p class="footer-nav-link">Shopping Details</p>
-                            </a>
-                        </li>
-                    </ul>
+                     <a href="#">
+                        <p>About Alan's Shop</p>
+                    </a>
+                    <a href="#">
+                        <p>Shopping Details</p>
+                    </a>
                 </div>
                 <div class="col-2 aboutus">
                     <p>E-mail
@@ -269,7 +266,7 @@
                     </br>
                 </div>
                 <div class="col aboutus">
-                    <p>alansshop2018@gmail.com</p>
+                    <a href="mailtoalansshop2018@gmail.com"><p>alansshop2018@gmail.com</p></a>
                     <p>03-512-3456</p>
                     <p>Monday to Friday 9:00-18:00</p>
                 </div>
@@ -280,17 +277,17 @@
                 </div>
                 <div class="col-2">
                     <a href="#">
-                        <i class="fab fa-facebook fa-2x" style="color:white"></i>
+                        <i class="fab fa-facebook fa-2x"></i>
                     </a>&nbsp;
                     <a href="#">
-                        <i class="fab fa-instagram fa-2x" style="color:white"></i>
+                        <i class="fab fa-instagram fa-2x"></i>
                     </a>&nbsp;
                     <a href="#">
-                        <i class="fab fa-line fa-2x" style="color:white"></i>
+                        <i class="fab fa-line fa-2x"></i>
                     </a>
                 </div>
                 <div class="col">
-
+                    
                 </div>
                 <div class="gototop js-top">
                     <a href="#">
@@ -316,12 +313,6 @@
                 scrollTop: 0
             }, 1000, "easeOutExpo");
         });
-
-        for (var i = 1; i <= 20; i++) {
-            var option = $("<option>");
-            option.html(i.toString());
-            $("#quantity_option").append(option);
-        } 
     </script>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
