@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/Modals.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Jaldi' rel='stylesheet'>
@@ -46,7 +45,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">登入</a>
+                <a name="" id="signin" class="botton" href="#" role="button" data-dismiss="modal">登入</a>
             </div>
         </div>
     </div>
@@ -80,8 +79,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">註冊</a>
-                <a name="" id="" class="btn" href="#" role="button" data-dismiss="modal">取消</a>
+                <a name="" id="signin" class="botton" href="#" role="button" data-dismiss="modal">註冊</a>
+                <a name="" id="" class="botton" href="#" role="button" data-dismiss="modal">取消</a>
             </div>
         </div>
     </div>
@@ -149,11 +148,9 @@
         <div class="row">
             <div class="col">
                 <h5 class="step1">&nbsp;Choose the payment</h5>
-                <div></div>
             </div>
             <div class="col">
-                <h5 class="step2_3">&nbsp;Complete the order</h5>
-                <div></div>
+                <h5 class="step2">&nbsp;Complete the order</h5>
             </div>
         </div>
         <div class="row mt-3 ">
@@ -190,7 +187,7 @@
                 </p>
             </div>
             <div class="col center">
-                <select id="quantity_option" class="form-control offset-4" style="width:80px;">
+                <select id="quantity_option" class="form-control offset-4" style="width:70px;">
                 </select>
             </div>
             <div class="col center">
@@ -207,6 +204,38 @@
                 <a href="#">
                     <i class="far fa-trash-alt"></i>
                 </a>
+            </div>
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="col center text-right">
+                <span>運送方式 / Shipping</span>
+                <select id="inputState" class="form-control" style="width:180px;">
+                    <option selected>Choose...</option>
+                    <option>宅配</option>
+                    <option>到店取貨</option>
+                </select>
+            </div>
+            <div class="col">
+                
+            </div>
+            <div class="col center text-right">
+                <span>付款方式 / Payment</span>
+                <select id="inputState" class="form-control" style="width:180px;">
+                    <option selected>Choose...</option>
+                    <option>貨到付款</option>
+                    <option>ATM轉帳</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col text-right">
+                <a href="" class="step3">繼續購物</a>
+            </div>
+            <div class="col">
+                
+            </div>
+            <div class="col text-left ">
+                <a href="" class="step4">完成訂單</a>
             </div>
         </div>
     </div>
@@ -289,9 +318,9 @@
         });
 
         for (var i = 1; i <= 20; i++) {
-             var option = $("<option>");
-             option.html(i.toString());
-             $("#quantity_option").append(option);
+            var option = $("<option>");
+            option.html(i.toString());
+            $("#quantity_option").append(option);
         } 
     </script>
     </script>
