@@ -37,14 +37,16 @@ body {
     padding: 0 0 120px 0;
 }
 
-a {
+.header a {
     color: #697259;
     outline: none !important;
 }
 
-a:hover {
+.header a:hover {
     color: rgb(135, 145, 76);
     text-decoration: none;
+    position: relative;
+    top: 1px;
 }
 
 .footer-nav-link {
@@ -57,6 +59,67 @@ a:hover {
 
 .categorylist {
     list-style: none;
+}
+
+.catcontent {
+    margin-top: 200px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.side ul li{
+    color: #676D3E;
+    font-weight: bold;
+    list-style: none;
+    line-height: 36px;
+}
+
+.catcontent a {
+    color: #676D3E;
+    text-decoration: none;
+}
+
+.catcontent a:hover {
+    color: #676D3E;
+    text-decoration: none;
+    color: rgb(135, 145, 76);
+}
+
+.right-content {
+    text-align: center;
+}
+
+.side>ul>li:hover {
+    position: relative;
+    right: 3px;
+    
+}
+
+.main {
+    text-align: center;
+}
+
+.main>a>p {
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.main>p {
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-item{
+    width: 220px;
+    height: 350px;
+}
+
+.catcontent p:first-child {
+    margin-top: 5px;
 }
 
 .side>ul {
@@ -74,7 +137,16 @@ a:hover {
 footer {
     background-color: #697259;
     height: 300px;
-    color: rgb(255, 254, 246);
+    color: rgb(221, 221, 221);
+}
+
+footer a {
+    color: rgb(221, 221, 221);
+}
+
+footer a:hover {
+    color:#FFF;
+    text-decoration: none;
 }
 
 .main-menu {
@@ -91,10 +163,6 @@ footer {
 
 .aboutus>ul>li {
     list-style: none;
-}
-
-.aboutus a {
-    color: rgb(255, 254, 246);
 }
 
 .topside {
@@ -114,6 +182,10 @@ footer {
 
 .gototop a {
     color: #FFF;
+}
+
+.gototop a:hover {
+    color: #bebebe; 
 }
 
 .modaltitle {
