@@ -214,6 +214,7 @@ footer {
     bottom: 0;
     margin: auto;
 }
+<<<<<<< HEAD
         
 .col > i:hover{
     color:rgb(135, 145, 76);
@@ -316,3 +317,30 @@ p {
     padding-top: 10px;
 }
 
+=======
+
+.col>i:hover {
+    color: rgb(135, 145, 76);
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.right-content>.row>.col-3 {
+    margin-bottom: 50px;
+}
+
+.price::before {
+    content: "NT.";
+}
+
+.nav-item>a {
+    padding-top: 10px;
+}
+
+>>>>>>> 504ca5fc25724d3059eb977c4cb2a95c2cbef2eb
