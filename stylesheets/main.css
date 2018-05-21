@@ -128,14 +128,11 @@ footer a:hover {
     margin-top: 200px;
 }
 
-.button {
+.btn {
+    width: 15%;
     color: snow;
     background-color: #697259;
-    padding:8px;
     border-radius: 10px;
-    text-align: center;
-    margin-top: 20px;
-    width: 110px;
     outline: none !important;
     border:none;
 }
@@ -144,7 +141,7 @@ footer a:hover {
     margin-top: 10px;
 }
 
-.button:hover {
+.btn:hover {
     color: lightgoldenrodyellow;
     text-decoration: none;
 }
@@ -217,21 +214,29 @@ footer a:hover {
     color:#697259;
 }
 
-.a{
+.a {
     color:#697259;
 }
 
-.a:hover{
+.a:hover {
     text-decoration:none;
     color: rgb(135, 145, 76);
 }
 
-.center > span{
+.col > a > i {
+    color: #697259;
+}
+
+.col > a > i:hover {
+    color:rgb(135, 145, 76);
+}
+
+.center > span {
     float: left; 
     padding: 10px 10px;
 }
 
-select{
+select {
     border-radius: 5px;
     border:1px solid lightgray;
     color:gray;
@@ -288,6 +293,7 @@ select{
     color: #697259;
     border: 2px solid #697259;
   }
+
   .step4:before {
     position: absolute;
     content: '';
@@ -299,10 +305,12 @@ select{
     left: 0;
     z-index: -1;
   }
+
   .step4:hover {
     color: white;
     text-decoration: none;
   }
+
   .step4:hover:before {
     width: 100%;
     transition: 0.4s all ease;
@@ -332,7 +340,6 @@ p {
     padding-top: 10px;
 }
 
-
 .col>i:hover {
     color: rgb(135, 145, 76);
 }
@@ -345,12 +352,8 @@ p {
     margin-bottom: 0px;
 }
 
-.right-content>.row>.col-3 {
-    margin-bottom: 50px;
-}
-
 .price::before {
-    content: "NT.";
+    content: "NT$ ";
 }
 
 .nav-item>a {
@@ -370,6 +373,52 @@ p {
     margin-left: 430px;
 }
 
-#col1{
+#col1 {
     margin-left: 189px;
+}
+
+.right-content>.row>.col-7>img {
+    margin-bottom: 15px;
+}
+
+.right-content>.row>.col-5 {
+    position: fixed;
+    top:28%;
+    right:18%;
+    width:300px;
+    margin-bottom: 1000px;
+}
+
+.right-content>.row>.col-5>p {
+    text-align: right;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    margin-bottom: 20px;
+}
+
+.right-content>.row>.col-5 span {
+    font-size:40px;
+}
+
+.right-content>.row>.col-5>p::before {
+    content: "NT$ ";
+}
+
+.right-content>.row>.col-5>button {
+    border:1px solid black;
+    width:15%;
+    background-color: rgb(255, 254, 250);
+    margin: 0 10px 30px 0;
+    outline: none;
+}
+
+.right-content>.row>.col-5>button:hover {
+    cursor: pointer;
+}
+
+.input-group-append button {
+    width:100%;
+}
+
+.right-content>.row>.col-5>.nav {
+    margin-top: 20px;
 }
