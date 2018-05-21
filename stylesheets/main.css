@@ -377,6 +377,25 @@ p {
     margin-left: 189px;
 }
 
+.button{
+    width: 30%;
+    color: snow;
+    background-color: #697259;
+    border-radius: 10px;
+    outline: none !important;
+    border:none;
+    margin-left: 150px;
+}
+
+.button:hover{
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+}
+
+.bmr{
+    margin-right: 150px;
+}
+
 .right-content>.row>.col-7>img {
     margin-bottom: 15px;
 }
