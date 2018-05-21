@@ -244,12 +244,14 @@ select{
     border:1px solid lightgray;
     color:gray;
     outline: none !important;
+    padding-left:10px;
 }
 
 .step3 {
     position: relative;
     width: 170px;
     height: 40px;
+    border-radius: 10px;
     display: flex;
     margin-left: 171px;
     justify-content: center;
@@ -263,6 +265,7 @@ select{
     content: '';
     width: 0;
     height: 40px;
+    border-radius: 10px;
     transition: 0.4s all ease;
     background: #697259;
     right: 0;
@@ -281,6 +284,7 @@ select{
     position: relative;
     width: 170px;
     height: 40px;
+    border-radius: 10px;
     display: flex;
     margin-left: 10px;
     justify-content: center;
@@ -293,6 +297,7 @@ select{
     content: '';
     width: 0;
     height: 40px;
+    border-radius: 10px;
     transition: 0.4s all ease;
     background: #697259;
     left: 0;
