@@ -223,6 +223,7 @@ footer a:hover {
     color: rgb(135, 145, 76);
 }
 
+<<<<<<< HEAD
 .col > a > i {
     color: #697259;
 }
@@ -232,6 +233,9 @@ footer a:hover {
 }
 
 .center > span {
+=======
+.center > span{
+>>>>>>> d35ee4ee6f007afe5cbb4abc8bc734ab7cad7107
     float: left; 
     padding: 10px 10px;
 }
@@ -269,6 +273,10 @@ select {
     z-index: -1;
   }
   .step3:hover {
+    color: white;
+    text-decoration: none;
+  }
+  .step3>a>i:hover {
     color: white;
     text-decoration: none;
   }
