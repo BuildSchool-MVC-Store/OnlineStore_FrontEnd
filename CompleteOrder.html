@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>customer</title>
+    <title>shoppingcart</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">登入</a>
+                <a name="" id="signin" class="button" href="#" role="button" data-dismiss="modal">登入</a>
             </div>
         </div>
     </div>
@@ -79,8 +79,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">註冊</a>
-                <a name="" id="" class="btn" href="#" role="button" data-dismiss="modal">取消</a>
+                <a name="" id="signin" class="button" href="#" role="button" data-dismiss="modal">註冊</a>
+                <a name="" id="" class="button" href="#" role="button" data-dismiss="modal">取消</a>
             </div>
         </div>
     </div>
@@ -142,106 +142,103 @@
         </div>
     </div>
     <div class="container"> <!--內容-->
+        <div class="row cartcontant">
+            <div class="col">
+                <a href="#" class="a">HOME</a>&nbsp;&nbsp;&#62;&nbsp;
+                <a class="a">BAG</a>
+            </div>
+        </div>
         <div class="row">
             <div class="col">
-                <div class="row content">
-                    <div class="col content" style="padding-top:150px;">
-                        <span>Hi, Account</span>
-                    </div>
-                    <div class="col content" style="padding-top:150px;text-align: right;">
-                        <a href="#" class="a">LOGOUT</a>
-                    </div>
-                </div>
-                <ul class="nav nav-tabs content">
-                    <li class="nav-item" id="col1">
-                        <a class="nav-link active" data-toggle="tab" href="#home">個人資訊</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu1">訂單</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div id="home" class="row tab-pane active">
-                        <div class="row mt-3 content">
-                            <div class="col-4">
-                                <b>姓名</b>
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" aria-describedby="basic-addon1">
-                            </div>
-                        </div>
-                        <div class="row mt-3 content">
-                            <div class="col-4">
-                                <b>電話號碼(選填)</b>
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" aria-describedby="basic-addon2">
-                            </div>
-                        </div>
-                        <div class="row mt-3 content">
-                            <div class="col-4">
-                                <b>EMAIL</b>
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" aria-describedby="basic-addon3">
-                            </div>
-                        </div>
-                        <div class="row mt-3 content">
-                            <div class="col-4">
-                                <b>地址(選填)</b>
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" aria-describedby="basic-addon4">
-                            </div>
-                        </div>
-                        <div class="row mt-3 content">
-                            <div class="col-4">
-                                <b>密碼</b>
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" aria-describedby="basic-addon5">
-                            </div>
-                        </div>
-                        <div class="row mt-4 content">
-                            <div class="col-4">
-                                    <a name="" id="signin" class="button" href="#">儲存</a>
-                                    <a name="" id="" class="button" href="#">取消</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu1" class="row tab-pane fade">
-                        <div class="row mt-4 content text-center">
-                            <div class="col-3">
-                                <b>訂單編號</b>
-                            </div>
-                            <div class="col-3">
-                                <b>訂單日期</b>
-                            </div>
-                            <div class="col-2">
-                                <b>總計</b>
-                            </div>
-                            <div class="col-3">
-                                <b>訂單狀態</b>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row mt-3 content text-center">
-                            <div class="col-3">
-                                XXXXXXXX
-                            </div>
-                            <div class="col-3">
-                                2017-06-05
-                            </div>
-                            <div class="col-2">
-                                $8,787
-                            </div>
-                            <div class="col-3">
-                                送貨中
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                &nbsp;
+                <h5 class="step1">&nbsp;Choose the payment</h5>
+            </div>
+            <div class="col">
+                <h5 class="step2">&nbsp;Complete the order</h5>
+            </div>
+        </div>
+        <div class="row mt-3 ">
+            <div class="col navbox">
+                <span>Shopping Cart</span>
+            </div>
+            <div class="col navbox">
+
+            </div>
+            <div class="col navbox">
+                <sapn>數量</sapn>
+            </div>
+            <div class="col navbox">
+                <sapn>單價</sapn>
+            </div>
+            <div class="col navbox">
+                <sapn>小計</sapn>
+            </div>
+            <div class="col navbox">
+                <sapn>刪除</sapn>
+            </div>
+        </div>
+        <div class="row mt-3 navbox_contant">
+            <div class="col">
+                <span>
+                    <img src='http://fakeimg.pl/150x150?font=lobster' alt='' />
+                </span>
+            </div>
+            <div class="col text">
+                <p>商品名稱</p>
+                <p>商品貨號</p>
+                <p>尺寸：
+                    <span></span>
+                </p>
+            </div>
+            <div class="col center">
+                <select id="quantity_option" class="offset-4" style="width:70px;">
+                </select>
+            </div>
+            <div class="col center">
+                <sapn>NT$
+                    <span></span>
+                </sapn>
+            </div>
+            <div class="col center">
+                <sapn>NT$
+                    <span></span>
+                </sapn>
+            </div>
+            <div class="col center">
+                <a href="#">
+                    <i class="far fa-trash-alt a"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="col center text-right">
+                <span>運送方式 / Shipping</span>
+                <select id="inputState" style="width:160px; margin-top:8px; outline: none !important;">
+                    <option selected>Choose...</option>
+                    <option>宅配</option>
+                    <option>到店取貨</option>
+                </select>
+            </div>
+            <div class="col">
+                
+            </div>
+            <div class="col center text-right">
+                <span>付款方式 / Payment</span>
+                <select id="inputState" style="width:160px; margin-top:8px;">
+                    <option selected>Choose...</option>
+                    <option>貨到付款</option>
+                    <option>超商取貨付款</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col text-right">
+                <a href="#" class="step3"><i class="far fa-hand-point-left"></i>&nbsp;繼續購物</a>
+            </div>
+            <div class="col">
+                
+            </div>
+            <div class="col text-left ">
+                <a href="" class="step4">完成訂單&nbsp;<i class="far fa-hand-point-right"></i></a>
             </div>
         </div>
     </div>
@@ -316,6 +313,12 @@
                 scrollTop: 0
             }, 1000, "easeOutExpo");
         });
+
+          for (var i = 1; i <= 20; i++) {
+             var option = $("<option>");
+             option.html(i.toString());
+             $("#quantity_option").append(option);
+        } 
     </script>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
