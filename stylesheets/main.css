@@ -226,14 +226,6 @@ footer a:hover {
     color: rgb(135, 145, 76);
 }
 
-.col > a > i{
-    color: #697259;
-}
-
-.col > a > i:hover{
-    color:rgb(135, 145, 76);
-}
-
 .center > span{
     float: left; 
     padding: 10px 10px;
@@ -272,6 +264,10 @@ select{
     z-index: -1;
   }
   .step3:hover {
+    color: white;
+    text-decoration: none;
+  }
+  .step3>a>i:hover {
     color: white;
     text-decoration: none;
   }
