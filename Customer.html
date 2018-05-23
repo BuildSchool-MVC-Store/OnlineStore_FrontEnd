@@ -85,57 +85,59 @@
         </div>
     </div>
 </div>
+
 <body>
     <div class="container-fluid">
-            <div class="header fixed-top">
-                    <div class="row">
-                        <div class="col">
-        
-                        </div>
-                        <div class="col">
-                            <a href="#">
-                                <h2 class="title">Alan's Shop</h2>
+        <div class="header fixed-top">
+            <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <h2 class="title">Alan's Shop</h2>
+                    </a>
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end topside">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#signinmodel">LOGIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#registermodel">REGISTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-user"></i>
                             </a>
-                        </div>
-                        <div class="col">
-                            <ul class="nav justify-content-end topside">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#signinmodel">LOGIN</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#registermodel">REGISTER</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-user"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-shopping-basket"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row main-menu">
-                        <div class="col">
-                            <ul class="nav justify-content-center">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">WOMEN</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">MEN</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">KIDS</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-basket"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-    <div class="container"> <!--內容-->
+            <div class="row main-menu">
+                <div class="col">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WOMEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">KIDS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="height:600px">
+        <!--內容-->
         <div class="row">
             <div class="col">
                 <div class="row content">
@@ -146,19 +148,24 @@
                         <a href="#" class="a">Log Out</a>
                     </div>
                 </div>
-                <ul class="nav nav-tabs content">
-                    <li class="nav-item" id="col1">
-                        <a class="nav-link active" data-toggle="tab" href="#home">個人資訊</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu1">訂單</a>
-                    </li>
-                </ul>
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-tabs content">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#home">個人資訊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#menu1">訂單</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="tab-content">
                     <div id="home" class="row tab-pane active">
                         <div class="row mt-3 content">
                             <div class="col-4">
-                                <b>姓名</b>
+                                <p>Name</p>
                             </div>
                             <div class="col">
                                 <input type="text" class="form-control" aria-describedby="basic-addon1">
@@ -166,7 +173,7 @@
                         </div>
                         <div class="row mt-3 content">
                             <div class="col-4">
-                                <b>電話號碼(選填)</b>
+                                <p>Phone</p>
                             </div>
                             <div class="col">
                                 <input type="text" class="form-control" aria-describedby="basic-addon2">
@@ -174,7 +181,7 @@
                         </div>
                         <div class="row mt-3 content">
                             <div class="col-4">
-                                <b>EMAIL</b>
+                                <p>Email</p>
                             </div>
                             <div class="col">
                                 <input type="text" class="form-control" aria-describedby="basic-addon3">
@@ -182,18 +189,10 @@
                         </div>
                         <div class="row mt-3 content">
                             <div class="col-4">
-                                <b>地址(選填)</b>
+                                <p>Address</p>
                             </div>
                             <div class="col">
                                 <input type="text" class="form-control" aria-describedby="basic-addon4">
-                            </div>
-                        </div>
-                        <div class="row mt-3 content">
-                            <div class="col-4">
-                                <b>密碼</b>
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" aria-describedby="basic-addon5">
                             </div>
                         </div>
                         <div class="row mt-4 content">
@@ -245,7 +244,7 @@
         <div class="container">
             <div class="row">
                 <div class="col aboutus">
-                     <a href="#">
+                    <a href="#">
                         <p>About Alan's Shop</p>
                     </a>
                     <a href="#">
@@ -265,7 +264,9 @@
                     </br>
                 </div>
                 <div class="col aboutus">
-                    <a href="mailtoalansshop2018@gmail.com"><p>alansshop2018@gmail.com</p></a>
+                    <a href="mailtoalansshop2018@gmail.com">
+                        <p>alansshop2018@gmail.com</p>
+                    </a>
                     <p>03-512-3456</p>
                     <p>Monday to Friday 9:00-18:00</p>
                 </div>
@@ -286,7 +287,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    
+
                 </div>
                 <div class="gototop js-top">
                     <a href="#">
