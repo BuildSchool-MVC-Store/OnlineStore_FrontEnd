@@ -1,7 +1,7 @@
 body {
     font-family: 'Jaldi',Microsoft JhengHei;
     color: #676D3E;
-    font-size: 20px;
+    font-size: 18px;
     background-color: rgb(255, 254, 250);
 }
 
@@ -13,6 +13,7 @@ body {
 
 .title {
     padding-top: 15px;
+    text-align: center;
 }
 
 .content {
@@ -74,7 +75,7 @@ footer a:hover {
 }
 
 .main-menu {
-    margin-bottom: 20px;
+    margin-bottom: 3px;
 }
 
 .aboutus {
