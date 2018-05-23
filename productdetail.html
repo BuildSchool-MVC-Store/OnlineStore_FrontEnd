@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>category</title>
+    <title>productdetail</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/categoryproduct.css">
+    <link rel="stylesheet" href="stylesheets/product.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Jaldi' rel='stylesheet'>
@@ -86,6 +86,7 @@
         </div>
     </div>
 </div>
+
 <body>
     <div class="container-fluid">
         <div class="header fixed-top">
@@ -94,13 +95,9 @@
 
                 </div>
                 <div class="col">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <h2 class="title">Alan's Shop</h2>
-                            </a>
-                        </li>
-                    </ul>
+                    <a href="#">
+                        <h2 class="title">Alan's Shop</h2>
+                    </a>
                 </div>
                 <div class="col">
                     <ul class="nav justify-content-end topside">
@@ -123,165 +120,109 @@
                     </ul>
                 </div>
             </div>
-            <div class="main-menu">
-                <div class="row">
-                    <div class="col">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">WOMEN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">MEN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">KIDS</a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="row main-menu">
+                <div class="col">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WOMEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">KIDS</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="container catcontent">
-            <!--內容-->
-            <div class="row">
-                <!--左邊側邊欄-->
-                <div class="col-2 side">
-                    <ul>
-                        <li>
-                            <a href="#">TOP</a>
-                        </li>
-                        <li>
-                            <a href="#">BOTTOM</a>
-                        </li>
-                        <li>
-                            <a href="#">JUMPSUIT</a>
-                        </li>
-                        <li>
-                            <a href="#">UNDERWEAR</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col right-content">
-                    <!-- 右邊主要內容 -->
-                    <div class="row">
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas'>
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
+        <!--內容-->
+        <div class="row">
+            <!--左邊側邊欄-->
+            <div class="col-2 side">
+                <ul>
+                    <li>
+                        <a href="#">TOP</a>
+                    </li>
+                    <li>
+                        <a href="#">BOTTOM</a>
+                    </li>
+                    <li>
+                        <a href="#">JUMPSUIT</a>
+                    </li>
+                    <li>
+                        <a href="#">UNDERWEAR</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col right-content">
+                <!-- 右邊主要內容 -->
+                <div class="row">
+                    <div class="col-8">
+                        <!--左圖片-->
+                        <img src='http://fakeimg.pl/620x790?font=museo' alt='' />
+                        <img src='http://fakeimg.pl/620x790?font=museo' alt='' />
+                    </div>
+                    <div class="col-4">
+                        <!--右商品細節-->
+                        <h4>Product Name</h4>
+                        <p>
+                            <span>290</span>
+                        </p>
+                        <h5>Size</h5>
+                        <button type="button">S</button>
+                        <button type="button">M</button>
+                        <button type="button">L</button>
+                        <h5>Color</h5>
+                        <button type="button">Black</button>
+                        <button type="button">White</button>
+                        <button type="button">Gray</button>
+                        <h5>Quantity</h5>
+                        <div class="input-group">
+                            <select class="custom-select ">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn" type="button">Add to ShoppingCart</button>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
-                        </div>
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
-                        </div>
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
-                        </div>
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
-                        </div>
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
-                        </div>
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
-                        </div>
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
-                        </div>
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
-                        </div>
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
-                        </div>
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
-                        </div>
-                        <div class="col-3">
-                            <a href="#">
-                                <img src='http://fakeimg.pl/220x280?font=bebas' alt='' />
-                            </a>
-                            <a href="#">
-                                <p>Product Name</p>
-                            </a>
-                            <p class="price">290</p>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">
+                                    <p>Information</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                    aria-selected="false">
+                                    <p>Laundry Instruction</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">- 100% nylon
+                                <br/>- Made in Taiwan</div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">- Machine wash cold
+                                <br/>- Do not bleach
+                                <br/>- Do not tumble dry</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <footer class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col aboutus">
-                     <a href="#">
+                    <a href="#">
                         <p>About Alan's Shop</p>
                     </a>
                     <a href="#">
@@ -295,7 +236,9 @@
                     </br>
                 </div>
                 <div class="col aboutus">
-                    <a href="mailtoalansshop2018@gmail.com"><p>alansshop2018@gmail.com</p></a>
+                    <a href="mailtoalansshop2018@gmail.com">
+                        <p>alansshop2018@gmail.com</p>
+                    </a>
                     <p>03-512-3456</p>
                     <p>Monday to Friday 9:00-18:00</p>
                 </div>
@@ -316,7 +259,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    
+
                 </div>
                 <div class="gototop js-top">
                     <a href="#">

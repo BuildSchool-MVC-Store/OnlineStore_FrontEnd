@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">登入</a>
+                <a name="" id="signin" class="button" href="#" role="button" data-dismiss="modal">登入</a>
             </div>
         </div>
     </div>
@@ -79,12 +79,13 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a name="" id="signin" class="btn" href="#" role="button" data-dismiss="modal">註冊</a>
-                <a name="" id="" class="btn" href="#" role="button" data-dismiss="modal">取消</a>
+                <a name="" id="signin" class="button" href="#" role="button" data-dismiss="modal">註冊</a>
+                <a name="" id="" class="button" href="#" role="button" data-dismiss="modal">取消</a>
             </div>
         </div>
     </div>
 </div>
+
 <body>
     <div class="container-fluid">
         <div class="header fixed-top">
@@ -93,13 +94,9 @@
 
                 </div>
                 <div class="col">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <h2 class="title">Alan's Shop</h2>
-                            </a>
-                        </li>
-                    </ul>
+                    <a href="#">
+                        <h2 class="title">Alan's Shop</h2>
+                    </a>
                 </div>
                 <div class="col">
                     <ul class="nav justify-content-end topside">
@@ -122,49 +119,74 @@
                     </ul>
                 </div>
             </div>
-            <div class="main-menu">
-                <div class="row">
-                    <div class="col">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">WOMEN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">MEN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">KIDS</a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="row main-menu">
+                <div class="col">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WOMEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">KIDS</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container"> <!--內容-->
+    <div class="container">
+        <!--內容-->
+        <div class="row cartcontant">
+    <div class="container" style="height:600px">
+        <!--內容-->
         <div class="row">
             <div class="col">
-                <div class="row content">
-                    <div class="col content" style="padding-top:150px;">
-                        <span>Hi, Account</span>
+                <span>Hi, Account</span>
+            </div>
+        </div>
+        <ul class="nav nav-tabs content">
+            <li class="nav-item" id="col1">
+                <a class="nav-link active" data-toggle="tab" href="#home">個人資訊</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1">訂單</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="row tab-pane active">
+                <div class="row mt-3 content">
+                    <div class="col-4">
+                        <b>姓名</b>
                     </div>
-                    <div class="col content" style="padding-top:150px;text-align: right;">
-                        <a href="#" class="a">Log Out</a>
+                    <div class="col">
+                        <input type="text" class="form-control" aria-describedby="basic-addon1">
                     </div>
                 </div>
-                <ul class="nav nav-tabs content">
-                    <li class="nav-item" id="col1">
-                        <a class="nav-link active" data-toggle="tab" href="#home">個人資訊</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu1">訂單</a>
-                    </li>
-                </ul>
+<<<<<<< HEAD
+                <div class="row mt-3 content">
+                    <div class="col-4">
+                        <b>電話號碼(選填)</b>
+=======
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-tabs content">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#home">個人資訊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#menu1">訂單</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="tab-content">
                     <div id="home" class="row tab-pane active">
                         <div class="row mt-3 content">
                             <div class="col-4">
-                                <b>姓名</b>
+                                <p>Name</p>
                             </div>
                             <div class="col">
                                 <input type="text" class="form-control" aria-describedby="basic-addon1">
@@ -172,7 +194,7 @@
                         </div>
                         <div class="row mt-3 content">
                             <div class="col-4">
-                                <b>電話號碼(選填)</b>
+                                <p>Phone</p>
                             </div>
                             <div class="col">
                                 <input type="text" class="form-control" aria-describedby="basic-addon2">
@@ -180,7 +202,7 @@
                         </div>
                         <div class="row mt-3 content">
                             <div class="col-4">
-                                <b>EMAIL</b>
+                                <p>Email</p>
                             </div>
                             <div class="col">
                                 <input type="text" class="form-control" aria-describedby="basic-addon3">
@@ -188,18 +210,10 @@
                         </div>
                         <div class="row mt-3 content">
                             <div class="col-4">
-                                <b>地址(選填)</b>
+                                <p>Address</p>
                             </div>
                             <div class="col">
                                 <input type="text" class="form-control" aria-describedby="basic-addon4">
-                            </div>
-                        </div>
-                        <div class="row mt-3 content">
-                            <div class="col-4">
-                                <b>密碼</b>
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" aria-describedby="basic-addon5">
                             </div>
                         </div>
                         <div class="row mt-4 content">
@@ -210,48 +224,83 @@
                                 <a class="button btn-block" href="#">儲存</a>
                             </div>
                         </div>
+>>>>>>> bffa7fd9b61a2b24abcd014c476d29107d674d3c
                     </div>
-                    <div id="menu1" class="row tab-pane fade">
-                        <div class="row mt-4 content text-center">
-                            <div class="col-3">
-                                <b>訂單編號</b>
-                            </div>
-                            <div class="col-3">
-                                <b>訂單日期</b>
-                            </div>
-                            <div class="col-2">
-                                <b>總計</b>
-                            </div>
-                            <div class="col-3">
-                                <b>訂單狀態</b>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row mt-3 content text-center">
-                            <div class="col-3">
-                                XXXXXXXX
-                            </div>
-                            <div class="col-3">
-                                2017-06-05
-                            </div>
-                            <div class="col-2">
-                                $8,787
-                            </div>
-                            <div class="col-3">
-                                送貨中
-                            </div>
-                        </div>
+                    <div class="col">
+                        <input type="text" class="form-control" aria-describedby="basic-addon2">
                     </div>
                 </div>
-                &nbsp;
+                <div class="row mt-3 content">
+                    <div class="col-4">
+                        <b>EMAIL</b>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="row mt-3 content">
+                    <div class="col-4">
+                        <b>地址(選填)</b>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" aria-describedby="basic-addon4">
+                    </div>
+                </div>
+                <div class="row mt-3 content">
+                    <div class="col-4">
+                        <b>密碼</b>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" aria-describedby="basic-addon5">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col text-right">
+                        <a name="" id="signin" class="button" href="#" role="button" style="width:100px;">取消</a>
+                        <a name="" id="" class="button" href="#" role="button">儲存</a>
+                    </div>
+                </div>
+            </div>
+            <div id="menu1" class="row tab-pane fade">
+                <div class="row mt-4 content text-center">
+                    <div class="col-3">
+                        <b>訂單編號</b>
+                    </div>
+                    <div class="col-3">
+                        <b>訂單日期</b>
+                    </div>
+                    <div class="col-2">
+                        <b>總計</b>
+                    </div>
+                    <div class="col-3">
+                        <b>訂單狀態</b>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-3 content text-center">
+                    <div class="col-3">
+                        XXXXXXXX
+                    </div>
+                    <div class="col-3">
+                        2017-06-05
+                    </div>
+                    <div class="col-2">
+                        $8,787
+                    </div>
+                    <div class="col-3">
+                        送貨中
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
     <footer class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col aboutus">
-                     <a href="#">
+                    <a href="#">
                         <p>About Alan's Shop</p>
                     </a>
                     <a href="#">
@@ -271,7 +320,9 @@
                     </br>
                 </div>
                 <div class="col aboutus">
-                    <a href="mailtoalansshop2018@gmail.com"><p>alansshop2018@gmail.com</p></a>
+                    <a href="mailtoalansshop2018@gmail.com">
+                        <p>alansshop2018@gmail.com</p>
+                    </a>
                     <p>03-512-3456</p>
                     <p>Monday to Friday 9:00-18:00</p>
                 </div>
@@ -292,7 +343,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    
+
                 </div>
                 <div class="gototop js-top">
                     <a href="#">

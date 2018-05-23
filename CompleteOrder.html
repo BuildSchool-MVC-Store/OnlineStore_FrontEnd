@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>shoppingcart</title>
+    <title>ComplateOrder</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -87,59 +87,54 @@
 </div>
 <body>
     <div class="container-fluid">
-        <div class="header fixed-top">
-            <div class="row">
-                <div class="col">
-
-                </div>
-                <div class="col">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
+            <div class="header fixed-top">
+                    <div class="row">
+                        <div class="col">
+        
+                        </div>
+                        <div class="col">
+                            <a href="#">
                                 <h2 class="title">Alan's Shop</h2>
                             </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav justify-content-end topside">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#signinmodel">LOGIN</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#registermodel">REGISTER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-user"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-shopping-basket"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="main-menu">
-                <div class="row">
-                    <div class="col">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">WOMEN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">MEN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">KIDS</a>
-                            </li>
-                        </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="nav justify-content-end topside">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#signinmodel">LOGIN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#registermodel">REGISTER</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fas fa-user"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fas fa-shopping-basket"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row main-menu">
+                        <div class="col">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">WOMEN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">MEN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">KIDS</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
     <div class="container"> <!--內容-->
         <div class="row cartcontant">
@@ -148,97 +143,43 @@
                 <a class="a">BAG</a>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <h5 class="step1">&nbsp;Choose the payment</h5>
-            </div>
-            <div class="col">
-                <h5 class="step2">&nbsp;Complete the order</h5>
-            </div>
-        </div>
         <div class="row mt-3 ">
             <div class="col navbox">
-                <span>Shopping Cart</span>
+                <span>訂單編號</span>
             </div>
             <div class="col navbox">
-
+                <sapn>訂單日期</sapn>
             </div>
             <div class="col navbox">
-                <sapn>數量</sapn>
+                <sapn>總價</sapn>
             </div>
             <div class="col navbox">
-                <sapn>單價</sapn>
+                <sapn>訂單狀態</sapn>
             </div>
             <div class="col navbox">
-                <sapn>小計</sapn>
-            </div>
-            <div class="col navbox">
-                <sapn>刪除</sapn>
+                <sapn>查詢</sapn>
             </div>
         </div>
-        <div class="row mt-3 navbox_contant">
+        <div class="row navbox_contant">
             <div class="col">
-                <span>
-                    <img src='http://fakeimg.pl/150x150?font=lobster' alt='' />
-                </span>
-            </div>
-            <div class="col text">
-                <p>商品名稱</p>
-                <p>商品貨號</p>
-                <p>尺寸：
-                    <span></span>
-                </p>
-            </div>
-            <div class="col center">
-                <select id="quantity_option" class="offset-4" style="width:70px;">
-                </select>
-            </div>
-            <div class="col center">
-                <sapn>NT$
-                    <span></span>
-                </sapn>
-            </div>
-            <div class="col center">
-                <sapn>NT$
-                    <span></span>
-                </sapn>
-            </div>
-            <div class="col center">
-                <a href="#">
-                    <i class="far fa-trash-alt a"></i>
-                </a>
-            </div>
-        </div>
-        <div class="row mt-3 mb-3">
-            <div class="col center text-right">
-                <span>運送方式 / Shipping</span>
-                <select id="inputState" style="width:160px; margin-top:8px; outline: none !important;">
-                    <option selected>Choose...</option>
-                    <option>宅配</option>
-                    <option>到店取貨</option>
-                </select>
+                <span>XXXXXXXX</span>
             </div>
             <div class="col">
-                
+               <span>order-date</span>
             </div>
-            <div class="col center text-right">
-                <span>付款方式 / Payment</span>
-                <select id="inputState" style="width:160px; margin-top:8px;">
-                    <option selected>Choose...</option>
-                    <option>貨到付款</option>
-                    <option>超商取貨付款</option>
-                </select>
+            <div class="col">
+                <span>NT$&nbsp;<span>total</span></span>
+            </div>
+            <div class="col center">
+                <sapn>運送中</sapn>
+            </div>
+            <div class="col center">
+                <a href="#" class="a">查詢</a>
             </div>
         </div>
         <div class="row mt-5 mb-5">
-            <div class="col text-right">
-                <a href="#" class="step3"><i class="far fa-hand-point-left"></i>&nbsp;繼續購物</a>
-            </div>
-            <div class="col">
-                
-            </div>
-            <div class="col text-left ">
-                <a href="" class="step4">完成訂單&nbsp;<i class="far fa-hand-point-right"></i></a>
+            <div class="col text-center">
+                <a href="#" class="step3 homeeffect">首頁</a>
             </div>
         </div>
     </div>

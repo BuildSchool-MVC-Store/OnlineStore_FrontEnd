@@ -1,7 +1,7 @@
 .catcontent {
-    margin-top: 200px;
     width: 100%;
-    margin-bottom: 80px;
+    margin-top: 140px;
+    margin-bottom: 20px;
 }
 
 .side ul li{
@@ -64,3 +64,42 @@
     list-style: none;
 }
 
+
+.right-content>.row>.col-8>img {
+    margin-bottom: 15px;
+}
+
+.right-content>.row>.col-4>p {
+    text-align: right;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    margin-bottom: 20px;
+}
+
+.right-content>.row>.col-4 span {
+    font-size:40px;
+}
+
+.right-content>.row>.col-4>p::before {
+    content: "NT$ ";
+}
+
+.right-content>.row>.col-4>button {
+    border:1px solid black;
+    width:20%;
+    background-color: rgb(255, 254, 250);
+    margin: 0 10px 30px 0;
+    outline: none;
+}
+
+.right-content>.row>.col-4>button:hover {
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+
+.input-group-append button {
+    width:100%;
+}
+
+.right-content>.row>.col-4>.nav {
+    margin-top: 20px;
+}

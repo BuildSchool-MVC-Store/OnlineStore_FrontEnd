@@ -1,7 +1,7 @@
 body {
     font-family: 'Jaldi',Microsoft JhengHei;
     color: #676D3E;
-    font-size: 20px;
+    font-size: 18px;
     background-color: rgb(255, 254, 250);
 }
 
@@ -13,20 +13,20 @@ body {
 
 .title {
     padding-top: 15px;
+    text-align: center;
 }
 
 .content {
-    margin-top: 120px;
+    
     width: 50%;
     padding: 0;
 }
 
 .cartcontant{
-   position: relative;
    padding-top: 180px;  
 }
 
-.mainimage {
+.content {
     max-width: 100%;
     padding: 0;
 }
@@ -74,7 +74,7 @@ footer a:hover {
 }
 
 .main-menu {
-    margin-bottom: 20px;
+    margin-bottom: 3px;
 }
 
 .aboutus {
@@ -128,22 +128,8 @@ footer a:hover {
     margin-top: 200px;
 }
 
-.btn {
-    width: 15%;
-    color: snow;
-    background-color: #697259;
-    border-radius: 10px;
-    outline: none !important;
-    border:none;
-}
-
 .password {
     margin-top: 10px;
-}
-
-.btn:hover {
-    color: lightgoldenrodyellow;
-    text-decoration: none;
 }
 
 .step1 {
@@ -245,75 +231,100 @@ select {
 }
 
 .step3 {
+    text-align: center;
+    display: inline-block;
     position: relative;
-    width: 170px;
-    height: 40px;
-    border-radius: 10px;
-    display: flex;
-    margin-left: 171px;
-    justify-content: center;
-    align-items: center;
-    color: #697259;
-    border: 2px solid #697259;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    background-color:#697259;
+    padding: 10px 0px;
+    width: 150px;
+    border-radius: 6px;
+    overflow: hidden;
   }
-
-  .step3:before {
+.step3.backeffect {
+    transition: all 0.2s linear 0s;
+  }
+  .step3.backeffect:before {
+    content: "BACK";
+    color: #fff;
     position: absolute;
-    content: '';
-    width: 0;
-    height: 40px;
-    border-radius: 10px;
-    transition: 0.4s all ease;
-    background: #697259;
-    right: 0;
-    z-index: -1;
-  }
-  .step3:hover {
-    color: white;
-    text-decoration: none;
-  }
-  .step3>a>i:hover {
-    color: white;
-    text-decoration: none;
-  }
-  .step3:hover:before {
-    width: 100%;
-    transition: 0.4s all ease;
-  }
-
-  .step4 {
-    position: relative;
-    width: 170px;
-    height: 40px;
-    border-radius: 10px;
     display: flex;
-    margin-left: 10px;
-    justify-content: center;
     align-items: center;
-    color: #697259;
-    border: 2px solid #697259;
-  }
-
-  .step4:before {
+    justify-content: center;
     position: absolute;
-    content: '';
-    width: 0;
-    height: 40px;
-    border-radius: 10px;
-    transition: 0.4s all ease;
-    background: #697259;
-    left: 0;
-    z-index: -1;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size:25px;
+    transition: all 0.2s linear 0s;
   }
-
-  .step4:hover {
-    color: white;
+  .step3.backeffect:hover {
+    text-indent: -9999px;
     text-decoration: none;
   }
+  .step3.backeffect:hover:before {
+    top: 0;
+    text-indent: 0;
+  }
 
-  .step4:hover:before {
+.nexteffect {
+    transition: all 0.2s linear 0s;
+  }
+.nexteffect:hover {
+    text-indent: -9999px;
+    text-decoration: none;
+  }
+.nexteffect:hover:before {
+    top: 0;
+    text-indent: 0;
+  }
+.nexteffect:before {
+    content: "NEXT";
+    color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0px;
     width: 100%;
-    transition: 0.4s all ease;
+    height: 100%;
+    text-align: center;
+    font-size:25px;
+    transition: all 0.2s linear 0s;
+  }
+
+  .homeeffect {
+    transition: all 0.2s linear 0s;
+  }
+.homeeffect:hover {
+    text-indent: -9999px;
+    text-decoration: none;
+  }
+.homeeffect:hover:before {
+    top: 0;
+    text-indent: 0;
+  }
+.homeeffect:before {
+    content: "HOME";
+    color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size:25px;
+    transition: all 0.2s linear 0s;
   }
 
 .col>i:hover {
@@ -340,18 +351,6 @@ p {
     padding-top: 10px;
 }
 
-.col>i:hover {
-    color: rgb(135, 145, 76);
-}
-
-img {
-    max-width: 100%;
-}
-
-p {
-    margin-bottom: 0px;
-}
-
 .price::before {
     content: "NT$ ";
 }
@@ -373,10 +372,6 @@ p {
     margin-left: 430px;
 }
 
-#col1 {
-    margin-left: 189px;
-}
-
 .button{
     width: 30%;
     color: snow;
@@ -384,7 +379,8 @@ p {
     border-radius: 10px;
     outline: none !important;
     border:none;
-    margin-left: 150px;
+    text-align: center;
+    padding:5px 0px;
 }
 
 .button:hover{
@@ -394,50 +390,4 @@ p {
 
 .bmr{
     margin-right: 150px;
-}
-
-.right-content>.row>.col-7>img {
-    margin-bottom: 15px;
-}
-
-.right-content>.row>.col-5 {
-    position: fixed;
-    top:28%;
-    right:18%;
-    width:300px;
-    margin-bottom: 1000px;
-}
-
-.right-content>.row>.col-5>p {
-    text-align: right;
-    border-bottom: 1px solid rgb(153, 153, 153);
-    margin-bottom: 20px;
-}
-
-.right-content>.row>.col-5 span {
-    font-size:40px;
-}
-
-.right-content>.row>.col-5>p::before {
-    content: "NT$ ";
-}
-
-.right-content>.row>.col-5>button {
-    border:1px solid black;
-    width:15%;
-    background-color: rgb(255, 254, 250);
-    margin: 0 10px 30px 0;
-    outline: none;
-}
-
-.right-content>.row>.col-5>button:hover {
-    cursor: pointer;
-}
-
-.input-group-append button {
-    width:100%;
-}
-
-.right-content>.row>.col-5>.nav {
-    margin-top: 20px;
 }
