@@ -16,22 +16,12 @@
         }
 
         .input_search {
-            width: 70%;
-
+            width: 850px;
         }
 
         #search {
             width: 1200px;
 
-        }
-
-        input.form-control {
-            height: 38px;
-        }
-
-        .search {
-            width: 100%;
-            margin: 5px 0 0 0;
         }
 
         div .line {
@@ -42,6 +32,7 @@
             width: 1200px;
         }
     </style>
+    <link rel="stylesheet" href="stylesheets/BackstageSearch.css">
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -200,11 +191,20 @@
                 <li class="breadcrumb-item">
                     <a href="#">新增訂單</a>
                 </li>
+                <li class="breadcrumb-item">
+                    <a href="#">修改訂單</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">刪除訂單</a>
+                </li>
             </ol>
             <div class="row">
                 <div class="col-12">
+
+                    <!-- 空白頁面 -->
+
                     <p>查詢訂單</p>
-                    <div class="row search">
+                    <div class="row" id="search">
                         <div class="col">
                             <div class="input-group ">
                                 <select class="custom-select" id="inputGroupSelect">
@@ -217,30 +217,6 @@
                                 <input type="text" class="input_search">
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary fa fa-search" type="button"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row search">
-                        <div class="col">
-                            <div class="input-group ">
-                                <select class="custom-select" id="inputGroupSelectDay">
-                                    <option selected>訂單日期</option>
-                                    <option value="1">出貨日期</option>
-                                </select>
-                                <input type="date" class="form-control" id="StartDate ">
-                                
-                                <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary fa fa-angle-right" type="button" disabled></button>
-    
-                                    </div>
-                           
-                                <input type="date" class="form-control" id="EndDate ">
-
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary fa fa-search" type="button"></button>
-
-
                                 </div>
                             </div>
                         </div>
@@ -268,11 +244,8 @@
                             <p>修改訂單狀態
                                 <p>
                         </div>
-                        <div class="col">
-                            <p>刪除訂單
-                                <p>
-                        </div>
                     </div>
+
                     <div class="row line">
                         <div class="col">
                             <a href="#">XXXXXXXX</a>
@@ -292,14 +265,17 @@
                         <div class="col">
                             <a href="#">訂單明細</a>
                         </div>
+                        <div class="col">
+                            <a href="#">修改訂單狀態</a>
+                        </div>
 
-                        <div class="col">
-                            <a href="#">修改訂單</a>
-                        </div>
-                        <div class="col">
-                            <a href="#">刪除訂單</a>
-                        </div>
                     </div>
+
+
+
+
+
+
                 </div>
             </div>
         </div>
