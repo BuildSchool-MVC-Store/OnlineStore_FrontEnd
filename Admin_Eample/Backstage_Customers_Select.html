@@ -7,35 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>員工管理_修改</title>
+  <title>客戶資料</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
-
-
-  <style>
-  .button {
-            width: 40%;
-            color: snow;
-            background-color: #444;
-            border-radius: 10px;
-            outline: none !important;
-            border: none;
-            margin-left: 150px;
-        }
-
-        .button:hover {
-            color: lightgoldenrodyellow;
-            text-decoration: none;
-        }
-
-        .bmr {
-            margin-right: 150px;
-        }
-  </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -184,153 +165,116 @@
         <li class="breadcrumb-item">
           <a href="#">主頁</a>
         </li>
-        <li class="breadcrumb-item">
-          <a href="#">員工</a>
-        </li>
-        <li class="breadcrumb-item active">修改員工資料</li>
+        <li class="breadcrumb-item active">客戶</li>
       </ol>
-      <div class="row">
-        <div class="col-12">
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> 客戶資料
 
-          <!-- 空白頁面 -->
+        </div>
+        <div class="card-body">
 
-          <h1 class="mt-2">修改員工資料</h1>
-          <div class="container-fluid">
-              
-          </div>
-          <div class="container-fluid">
-              <div class="row">
-                    <div class="col-6">
-                            <div class="container mt-5 text-left">
-                                <div class="row  ">
+          <div class="table-responsive">
 
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 
-                                    <div class="col-4 mt-2 ">
-                                        <b>姓名</b>
-                                    </div>
-                                    <div class="col">
-                                        <input class="form-control" aria-describedby="basic-addon1" type="text">
-                                    </div>
+              <thead>
+                <tr>
+                  <th>姓名</th>
+                  <th>帳號 </th>
+                  <th>電話 </th>
+                  <th>信箱</th>
+                  <th>地址</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>姓名</th>
+                  <th>帳號 </th>
+                  <th>電話 </th>
+                  <th>生日</th>
+                  <th>地址</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>A 客戶 姓名</td>
+                  <td>A 客戶 帳號</td>
+                  <td>A 客戶 電話</td>
+                  <td>A 客戶 信箱</td>
+                  <td>A 客戶 地址</td>
 
+                </tr>
+                <tr>
+                  <td>B 客戶 姓名</td>
+                  <td>B 客戶 帳號</td>
+                  <td>B 客戶 電話</td>
+                  <td>B 客戶 信箱</td>
+                  <td>B 客戶 地址</td>
 
-                                </div>
-                                <div class="row mt-3  ">
+                </tr>
+                <tr>
+                  <td>C 客戶 姓名</td>
+                  <td>C 客戶 帳號</td>
+                  <td>C 客戶 電話</td>
+                  <td>C 客戶 信箱</td>
+                  <td>C 客戶 地址</td>
 
-                                    <div class="col-4  mt-2">
-                                        <b>帳號</b>
-                                    </div>
-                                    <div class="col">
-                                        <input class="form-control" aria-describedby="basic-addon2" type="text">
-                                    </div>
+                </tr>
+              </tbody>
 
-                                </div>
-                                <div class="row mt-3  ">
+            </table>
 
-                                    <div class="col-4  mt-2">
-                                        <b>密碼</b>
-                                    </div>
-                                    <div class="col">
-                                        <input class="form-control" aria-describedby="basic-addon3" type="Password">
-                                    </div>
-
-                                </div>
-                                <div class="row mt-3  ">
-
-                                    <div class="col-4  mt-2">
-                                        <b>生日</b>
-                                    </div>
-                                    <div class="col">
-                                        <input class="form-control" aria-describedby="basic-addon4" type="date">
-                                    </div>
-
-                                </div>
-                                <div class="row mt-3  ">
-
-                                    <div class="col-4  mt-2">
-                                        <b>信箱</b>
-                                    </div>
-                                    <div class="col">
-                                        <input class="form-control" aria-describedby="basic-addon5" type="text">
-                                    </div>
-
-                                </div>
-                                <div class="row mt-3  ">
-
-                                    <div class="col-4  mt-2">
-                                        <b>電話</b>
-                                    </div>
-                                    <div class="col">
-                                        <input class="form-control" aria-describedby="basic-addon6" type="text">
-                                    </div>
-
-                                </div>
-                                <div class="row mt-3  ">
-
-                                    <div class="col-4  mt-2">
-                                        <b>地址</b>
-                                    </div>
-                                    <div class="col">
-                                        <input class="form-control" aria-describedby="basic-addon7" type="text">
-                                    </div>
-
-                                </div>
-                                <div class="row mt-4  ">
-                                    <div class="col text-center">
-                                        <a class="button btn-block" href="#">取消</a>
-                                    </div>
-                                    <div class="col text-center bmr">
-                                        <a class="button btn-block" href="#">儲存</a>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-              </div>
           </div>
 
         </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+
       </div>
+      <!-- /.container-fluid-->
+      <!-- /.content-wrapper-->
+      <footer class="sticky-footer">
+        <div class="container">
+          <div class="text-center">
+            <small>Copyright © Alan's Shop 2018</small>
+          </div>
+        </div>
+      </footer>
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+      </a>
+      <!-- Logout Modal-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <a class="btn btn-primary" href="#">登出</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Core plugin JavaScript-->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Page level plugin JavaScript-->
+      <script src="vendor/datatables/jquery.dataTables.js"></script>
+      <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="js/sb-admin.min.js"></script>
+      <!-- Custom scripts for this page-->
+      <script src="js/sb-admin-datatables.min.js"></script>
     </div>
-    <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
-    <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center">
-          <small>Copyright © Alan's Shop 2018</small>
-        </div>
-      </div>
-    </footer>
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
-    <!-- Logout Modal-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="#">登出</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin.min.js"></script>
-  </div>
 </body>
 
 </html>
