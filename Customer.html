@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a name="" id="signin" class="button" href="#" role="button" data-dismiss="modal">登入</a>
+                <a name="" id="signin" class="btn" href="#" role="btn" data-dismiss="modal">登入</a>
             </div>
         </div>
     </div>
@@ -79,8 +79,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a name="" id="signin" class="button" href="#" role="button" data-dismiss="modal">註冊</a>
-                <a name="" id="" class="button" href="#" role="button" data-dismiss="modal">取消</a>
+                <a name="" id="signin" class="btn" href="#" role="btn" data-dismiss="modal">註冊</a>
+                <a name="" id="" class="btn" href="#" role="btn" data-dismiss="modal">取消</a>
             </div>
         </div>
     </div>
@@ -136,159 +136,93 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <!--內容-->
-        <div class="row cartcontant">
-    <div class="container" style="height:600px">
+    <div class="container customer" style="margin-top: 160px;height: 100vh; width:600px">
         <!--內容-->
         <div class="row">
             <div class="col">
-                <span>Hi, Account</span>
-            </div>
-        </div>
-        <ul class="nav nav-tabs content">
-            <li class="nav-item" id="col1">
-                <a class="nav-link active" data-toggle="tab" href="#home">個人資訊</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu1">訂單</a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div id="home" class="row tab-pane active">
-                <div class="row mt-3 content">
-                    <div class="col-4">
-                        <b>姓名</b>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <ul class="nav nav-tabs content">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#home">個人資訊</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#menu1">訂單</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="tab-content">
-                    <div id="home" class="row tab-pane active">
-                        <div class="row mt-3 content">
-                            <div class="col-4">
-                                <p>Name</p>
+                <h5>Hi,
+                    <span>Account</span>
+                    <span>
+                        <a href="#">LOGOUT</a>
+                    </span>
+                </h5>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">個人資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#order" role="tab" aria-controls="profile" aria-selected="false">訂單</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Name *</p>
+                                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
                             </div>
-                            <div class="col">
-                                <input type="text" class="form-control" aria-describedby="basic-addon1">
+                            <div class="col-6">
+                                <p>Phone *</p>
+                                <input type="tel" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
                             </div>
-                        </div>
-                        <div class="row mt-3 content">
-                            <div class="col-4">
-                                <p>Phone</p>
+                            <div class="col-6">
+                                <p>Email *</p>
+                                <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
                             </div>
-                            <div class="col">
-                                <input type="text" class="form-control" aria-describedby="basic-addon2">
-                            </div>
-                        </div>
-                        <div class="row mt-3 content">
-                            <div class="col-4">
-                                <p>Email</p>
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" aria-describedby="basic-addon3">
-                            </div>
-                        </div>
-                        <div class="row mt-3 content">
-                            <div class="col-4">
+                            <div class="col-6">
                                 <p>Address</p>
+                                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                            </div>
+                            <div class="col-6">
+                                <p>Password</p>
+                                <input type="password" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col">
+                                <button type="button" class="btn">儲存</button>
+                                <button type="button" class="btn">取消</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row" style="border-bottom: 1px solid #DEE2E6">
+                            <div class="col">
+                                <p>No.</p>
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" aria-describedby="basic-addon4">
+                                <p>OrderDate</p>
+                            </div>
+                            <div class="col">
+                                <p>Total</p>
+                            </div>
+                            <div class="col">
+                                <p>State</p>
                             </div>
                         </div>
-                        <div class="row mt-4 content">
-                            <div class="col text-center">
-                                <a class="button btn-block" href="#">取消</a>
+                        <div class="row">
+                            <div class="col">
+                                <p>XXXXXX</p>
                             </div>
-                            <div class="col text-center bmr">
-                                <a class="button btn-block" href="#">儲存</a>
+                            <div class="col">
+                                <p>2017-08-07</p>
+                            </div>
+                            <div class="col">
+                                <p>NT.8787</p>
+                            </div>
+                            <div class="col">
+                                <p>已出貨</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" aria-describedby="basic-addon2">
-                    </div>
-                </div>
-                <div class="row mt-3 content">
-                    <div class="col-4">
-                        <b>EMAIL</b>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" aria-describedby="basic-addon3">
-                    </div>
-                </div>
-                <div class="row mt-3 content">
-                    <div class="col-4">
-                        <b>地址(選填)</b>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" aria-describedby="basic-addon4">
-                    </div>
-                </div>
-                <div class="row mt-3 content">
-                    <div class="col-4">
-                        <b>密碼</b>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" aria-describedby="basic-addon5">
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col text-right">
-                        <a name="" id="signin" class="button" href="#" role="button" style="width:100px;">取消</a>
-                        <a name="" id="" class="button" href="#" role="button">儲存</a>
-                    </div>
-                </div>
-            </div>
-            <div id="menu1" class="row tab-pane fade">
-                <div class="row mt-4 content text-center">
-                    <div class="col-3">
-                        <b>訂單編號</b>
-                    </div>
-                    <div class="col-3">
-                        <b>訂單日期</b>
-                    </div>
-                    <div class="col-2">
-                        <b>總計</b>
-                    </div>
-                    <div class="col-3">
-                        <b>訂單狀態</b>
-                    </div>
-                </div>
-                <hr>
-                <div class="row mt-3 content text-center">
-                    <div class="col-3">
-                        XXXXXXXX
-                    </div>
-                    <div class="col-3">
-                        2017-06-05
-                    </div>
-                    <div class="col-2">
-                        $8,787
-                    </div>
-                    <div class="col-3">
-                        送貨中
+                        <div class="row text-center">
+                            <div class="col">
+                                <button type="button" class="btn">首頁</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
     <footer class="container-fluid">
         <div class="container">
@@ -302,15 +236,9 @@
                     </a>
                 </div>
                 <div class="col-2 aboutus">
-                    <p>E-mail
-
-                    </p>
-                    <p>Phone
-
-                    </p>
-                    <p>Service Hours
-
-                    </p>
+                    <p>E-mail</p>
+                    <p>Phone</p>
+                    <p>Service Hours</p>
                     </br>
                 </div>
                 <div class="col aboutus">
