@@ -17,7 +17,6 @@ body {
 }
 
 .content {
-    
     width: 50%;
     padding: 0;
 }
@@ -121,6 +120,17 @@ footer a:hover {
     position: relative;
     top: 200px;
 }
+
+/*button.css*/
+.btn {
+    background-color:#697259;
+    color:white;
+}
+
+.btn:hover {
+    color:rgb(255, 254, 250);
+}
+/*button.css*/
 
 .signword {
     color: grey;
@@ -372,22 +382,34 @@ p {
     margin-left: 430px;
 }
 
-.button{
-    width: 30%;
-    color: snow;
-    background-color: #697259;
-    border-radius: 10px;
-    outline: none !important;
-    border:none;
-    text-align: center;
-    padding:5px 0px;
-}
-
-.button:hover{
-    color: lightgoldenrodyellow;
-    text-decoration: none;
-}
-
 .bmr{
     margin-right: 150px;
 }
+
+
+/*customer.css*/
+.customer a {
+    color:#697269;
+}
+
+.customer a:hover {
+    color:rgb(135, 145, 76);
+    text-decoration: none;
+}
+
+.customer .row .col span a {
+   float: right;
+}
+
+.tab-content .row {
+    margin-top: 5%;
+}
+
+.tab-content .row .col-6 {
+    margin-bottom: 3%;
+}
+
+.orderpage {
+    border-bottom: 1px solid black;
+}
+/*customer.css*/
