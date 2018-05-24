@@ -1,3 +1,4 @@
+/*index.css*/
 body {
     font-family: 'Jaldi',Microsoft JhengHei;
     color: #676D3E;
@@ -7,7 +8,6 @@ body {
 
 .header {
     background-color: white;
-    border-bottom: 1px solid rgb(219, 219, 219);
     box-shadow: .5px .5px 1px .5px #161616;
 }
 
@@ -17,17 +17,7 @@ body {
 }
 
 .content {
-    
     width: 50%;
-    padding: 0;
-}
-
-.cartcontant{
-   padding-top: 180px;  
-}
-
-.content {
-    max-width: 100%;
     padding: 0;
 }
 
@@ -54,10 +44,6 @@ body {
     top: 1px;
 }
 
-.footer-nav-link {
-    color: rgb(255, 254, 246);
-}
-
 footer {
     background-color: #697259;
     height: 300px;
@@ -71,6 +57,10 @@ footer a {
 footer a:hover {
     color:#FFF;
     text-decoration: none;
+}
+
+.footer-nav-link {
+    color: rgb(255, 254, 246);
 }
 
 .main-menu {
@@ -111,6 +101,8 @@ footer a:hover {
 .gototop a:hover {
     color: #bebebe; 
 }
+/*index.css*/
+
 
 .modaltitle {
     color: #697259;
@@ -121,6 +113,17 @@ footer a:hover {
     position: relative;
     top: 200px;
 }
+
+/*button.css*/
+.btn {
+    background-color:#697259;
+    color:white;
+}
+
+.btn:hover {
+    color:rgb(255, 254, 250);
+}
+/*button.css*/
 
 .signword {
     color: grey;
@@ -365,22 +368,34 @@ p {
     margin-left: 430px;
 }
 
-.button{
-    width: 30%;
-    color: snow;
-    background-color: #697259;
-    border-radius: 10px;
-    outline: none !important;
-    border:none;
-    text-align: center;
-    padding:5px 0px;
-}
-
-.button:hover{
-    color: lightgoldenrodyellow;
-    text-decoration: none;
-}
-
 .bmr{
     margin-right: 150px;
 }
+
+
+/*customer.css*/
+.customer a {
+    color:#697269;
+}
+
+.customer a:hover {
+    color:rgb(135, 145, 76);
+    text-decoration: none;
+}
+
+.customer .row .col span a {
+   float: right;
+}
+
+.tab-content .row {
+    margin-top: 5%;
+}
+
+.tab-content .row .col-6 {
+    margin-bottom: 3%;
+}
+
+.orderpage {
+    border-bottom: 1px solid black;
+}
+/*customer.css*/
