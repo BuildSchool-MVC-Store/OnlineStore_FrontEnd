@@ -176,14 +176,12 @@ footer a:hover {
 
 .navbox {
     border-bottom: 1px solid gray;
-    border-radius: 10px 10px 0px 0px;
-    padding: 10px;
+    padding: 10px 0px;
     text-align: center;
 }
 
 .navbox_contant {
     border-bottom: 1px solid gray;
-    border-radius: 10px 10px 0px 0px;
     text-align: center;
     padding: 25px 0px;
 }
@@ -243,10 +241,10 @@ select {
     border-radius: 6px;
     overflow: hidden;
   }
-.step3.backeffect {
+.effect {
     transition: all 0.2s linear 0s;
   }
-  .step3.backeffect:before {
+  .effect:before {
     content: "BACK";
     color: #fff;
     position: absolute;
@@ -262,26 +260,15 @@ select {
     font-size:25px;
     transition: all 0.2s linear 0s;
   }
-  .step3.backeffect:hover {
+  .effect:hover {
     text-indent: -9999px;
     text-decoration: none;
   }
-  .step3.backeffect:hover:before {
+  .effect:hover:before {
     top: 0;
     text-indent: 0;
   }
 
-.nexteffect {
-    transition: all 0.2s linear 0s;
-  }
-.nexteffect:hover {
-    text-indent: -9999px;
-    text-decoration: none;
-  }
-.nexteffect:hover:before {
-    top: 0;
-    text-indent: 0;
-  }
 .nexteffect:before {
     content: "NEXT";
     color: #fff;
@@ -299,19 +286,25 @@ select {
     transition: all 0.2s linear 0s;
   }
 
-  .homeeffect {
-    transition: all 0.2s linear 0s;
-  }
-.homeeffect:hover {
-    text-indent: -9999px;
-    text-decoration: none;
-  }
-.homeeffect:hover:before {
-    top: 0;
-    text-indent: 0;
-  }
 .homeeffect:before {
     content: "HOME";
+    color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size:25px;
+    transition: all 0.2s linear 0s;
+  }
+
+  .orderseffect:before {
+    content: "ORDERS";
     color: #fff;
     position: absolute;
     display: flex;
