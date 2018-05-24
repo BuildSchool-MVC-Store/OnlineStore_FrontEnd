@@ -1,3 +1,4 @@
+/*index.css*/
 body {
     font-family: 'Jaldi',Microsoft JhengHei;
     color: #676D3E;
@@ -7,7 +8,6 @@ body {
 
 .header {
     background-color: white;
-    border-bottom: 1px solid rgb(219, 219, 219);
     box-shadow: .5px .5px 1px .5px #161616;
 }
 
@@ -18,13 +18,6 @@ body {
 
 .content {
     width: 50%;
-    padding: 0;
-}
-
-
-
-.content {
-    max-width: 100%;
     padding: 0;
 }
 
@@ -51,10 +44,6 @@ body {
     top: 1px;
 }
 
-.footer-nav-link {
-    color: rgb(255, 254, 246);
-}
-
 footer {
     background-color: #697259;
     height: 300px;
@@ -68,6 +57,10 @@ footer a {
 footer a:hover {
     color:#FFF;
     text-decoration: none;
+}
+
+.footer-nav-link {
+    color: rgb(255, 254, 246);
 }
 
 .main-menu {
@@ -108,6 +101,8 @@ footer a:hover {
 .gototop a:hover {
     color: #bebebe; 
 }
+/*index.css*/
+
 
 .modaltitle {
     color: #697259;
