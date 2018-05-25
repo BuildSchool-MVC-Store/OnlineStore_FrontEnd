@@ -7,38 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>後台 新增訂單</title>
+    <title>新增訂單</title>
     <!-- Bootstrap core CSS-->
-    <style>
-        body {
-            background: #eee;
-            font-family: Microsoft JhengHei !important;
-        }
-
-        input.form-control {
-            height: 38px;
-        }
-
-
-
-        div .line {
-            font-size: 0.8em;
-            border-bottom: 1px solid rgb(219, 219, 219);
-            box-shadow: 0px 0x 1px 0px #161616;
-            margin: 10px 0 0 0;
-            width: 1200px;
-        }
-
-        img {
-            margin: 0px 0 0 0 !important;
-        }
-    </style>
-
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -192,143 +171,166 @@
                     <a href="#">新增訂單</a>
                 </li>
             </ol>
-            <div class="row">
-                <div class="col-12">
-                    <p>新增訂單</p>
-
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="">會員帳號</span>
-                                </div>
-                                <input type="text" class="form-control">
+            <!-- Example DataTables Card-->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <b>新增訂單</b>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">會員帳號</span>
                             </div>
+                            <input type="text" class="form-control">
                         </div>
                     </div>
-                    <div class="row mt-2">
-                        <div class="col">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="">訂單日期</span>
-                                </div>
-                                <input type="date" class="form-control">
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">訂單日期</span>
                             </div>
+                            <input type="date" class="form-control">
                         </div>
                     </div>
-                    <div class="row">
+                </div>
 
-                        <div class="row  line">
-                            <div class="col">
-                                <p>商品編號</p>
-                            </div>
-                            <div class="col">
-                                <p>圖片</p>
-                            </div>
+                <div class="card-body">
 
-                            <div class="col">
-                                <p>商品名稱</p>
-                            </div>
-                            <div class="col">
-                                <p>尺寸</p>
-                            </div>
+                    <div class="table-responsive">
 
-                            <div class="col">
-                                <p>數量</p>
-                            </div>
-
-                            <div class="col">
-                                <p>價格</p>
-                            </div>
-                            <div class="col">
-                                <p>刪除商品</p>
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 
 
-                            </div>
-                        </div>
+                            <thead>
+                                <tr>
+                                    <th>商品編號</th>
+                                    <th>圖片</th>
+                                    <th>商品名稱</th>
+                                    <th>尺寸</th>
+                                    <th>數量</th>
+                                    <th>顏色</th>
+                                    <th>價格</th>
+                                    <th>修改</th>
+                                    <th>刪除</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>XXXXXXXX</td>
+                                    <td>
+                                        <img src="http://fakeimg.pl/50x50?font=bebas" alt="">
+                                    </td>
+                                    <td>短褲</td>
+                                    <td>
+                                        <div class="col">
+                                            <select>
+                                                <option value="">-</option>
+                                                <option value="">S</option>
+                                                <option value="">M</option>
+                                                <option value="">L</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="col">
+                                            <select>
+                                                <option value="">-</option>
+                                                <option value="">黑</option>
+                                                <option value="">白</option>
+                                                <option value="">藍</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="col">
+                                            <select>
+                                                <option value="">-</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>$500</td>
+                                    <td class="text-center">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </td>
+                                    <td class="text-center">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>XXXXXXXX</td>
+                                    <td>
+                                        <img src="http://fakeimg.pl/50x50?font=bebas" alt="">
+                                    </td>
+                                    <td>上衣</td>
+                                    <td>
+                                        <div class="col">
+                                            <select>
+                                                <option value="">-</option>
+                                                <option value="">S</option>
+                                                <option value="">M</option>
+                                                <option value="">L</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="col">
+                                            <select>
+                                                <option value="">-</option>
+                                                <option value="">黑</option>
+                                                <option value="">白</option>
+                                                <option value="">藍</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="col">
+                                            <select>
+                                                <option value="">-</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>$800</td>
+                                    <td class="text-center">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </td>
+                                    <td class="text-center">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="row">
+                </div>
 
-                        <div class="row  line">
-                            <div class="col">
-                                <p>XXXXXXXX</p>
-                            </div>
-                            <div class="col">
-                                <img src="http://fakeimg.pl/50x50?font=bebas" alt="">
-                            </div>
-
-                            <div class="col">
-                                <p class="justify-content-center ">???</p>
-                            </div>
-                            <div class="col">
-                                <select>
-                                    <option value="">-</option>
-                                    <option value="">S</option>
-                                    <option value="">M</option>
-                                    <option value="">L</option>
-                                </select>
-                            </div>
-
-                            <div class="col">
-                                <select>
-                                    <option value="">-</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                            </div>
-                            <div class="col">
-                                <p>87</p>
-                            </div>
-                            <div class="col ">
-                                <a href="#">刪除</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <div class="col mt-2">
-                            <p>新增商品
-                                <a href="#">+</a>
-                            </p>
-                        </div>
-
+                <div class="row">
+                    <div class="offset-1"></div>
+                    <div class="col ">
+                        <b>新增商品
+                            <a href="#">+</a>
+                        </b>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col mt-2">
-                    總價:
-                    <span>87</span>
+                <div class="row">
+                    <div class="offset-1"></div>
+                    <div class="col">
+                        <b> 新增訂單
+                            <a href="#">+</a>
+                        </b>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
 
-                <div class="col mt-2">
-                    <span>付款方式:</span>
-                    <select>
-                        <option value="">-</option>
-                        <option value="">宅配</option>
-                        <option value="">超商取貨</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col mt-2">
-                    <span>運送方式:</span>
-                    <select>
-                        <option value="">-</option>
-                        <option value="">貨到府款</option>
-                        <option value="">超商貨到付款</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col mt-2">
-                    <button type="button" class="btn btn-secondary">Create</button>
-
-                </div>
+                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
             </div>
         </div>
         <!-- /.container-fluid-->
@@ -336,7 +338,7 @@
         <footer class="sticky-footer">
             <div class="container">
                 <div class="text-center">
-                    <small>Copyright © Alan's Shop 2018</small>
+                    <small>Copyright © Your Website 2018</small>
                 </div>
             </div>
         </footer>
@@ -357,7 +359,7 @@
                     <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="#">登出</a>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
                     </div>
                 </div>
             </div>
@@ -367,9 +369,15 @@
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <!-- Core plugin JavaScript-->
         <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Page level plugin JavaScript-->
+        <script src="vendor/datatables/jquery.dataTables.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
         <!-- Custom scripts for all pages-->
         <script src="js/sb-admin.min.js"></script>
+        <!-- Custom scripts for this page-->
+        <script src="js/sb-admin-datatables.min.js"></script>
     </div>
+
 </body>
 
 </html>
