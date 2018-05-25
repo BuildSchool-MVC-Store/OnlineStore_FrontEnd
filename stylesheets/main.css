@@ -1,6 +1,7 @@
 /*index.css*/
+
 body {
-    font-family: 'Jaldi',Microsoft JhengHei;
+    font-family: 'Jaldi', Microsoft JhengHei;
     color: #676D3E;
     font-size: 15px;
     background-color: rgb(255, 254, 250);
@@ -58,7 +59,7 @@ footer a {
 }
 
 footer a:hover {
-    color:#FFF;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -102,38 +103,39 @@ footer a:hover {
 }
 
 .gototop a:hover {
-    color: #bebebe; 
+    color: #bebebe;
 }
+
 /*index.css*/
 
-
-
 /*button.css*/
+
 .btn {
-    background-color:#697259;
-    color:white;
-    width:100px;
+    background-color: #697259;
+    color: white;
+    width: 100px;
 }
 
 .btn:hover {
-    color:rgb(255, 254, 250);
+    color: rgb(255, 254, 250);
     background-color: #7d8570;
 }
+
 /*button.css*/
 
-
 /*customer.css*/
+
 .customer a {
-    color:#697269;
+    color: #697269;
 }
 
 .customer a:hover {
-    color:rgb(135, 145, 76);
+    color: rgb(135, 145, 76);
     text-decoration: none;
 }
 
 .customer .row .col span a {
-   float: right;
+    float: right;
 }
 
 .tab-content .row {
@@ -145,25 +147,50 @@ footer a:hover {
 }
 
 .tab-content a {
-    color:#FFF;
+    color: #FFF;
 }
 
 .tab-content a:hover {
-    color:rgb(255, 254, 250);
+    color: rgb(255, 254, 250);
 }
 
 .orderpage {
     border-bottom: 1px solid black;
 }
+
 /*customer.css*/
 
-
-
 /*orderdetail.css --- shoppingcart.css*/
+
+.navbar {
+    line-height: 40px;
+    text-align: center;
+}
+
+.navbox:first-child {
+    border-top: 1px solid #DEE2E6;
+    border-bottom: 1px solid #DEE2E6;
+    line-height: 40px;
+    text-align: center;
+}
+
 .navbox {
     border-bottom: 1px solid #DEE2E6;
     line-height: 40px;
     text-align: center;
+}
+
+.navbox>.col> {
+    line-height: 150px;
+}
+
+.navbox>.col>p {
+    margin: 0;
+}
+
+.navbox .col:nth-child(2) {
+    line-height: 35px;
+    padding-top: 20px;
 }
 
 .navbox_content {
@@ -173,17 +200,18 @@ footer a:hover {
 }
 
 #inputState {
-    width:50%;
+    width: 50%;
 }
 
 .navbox img {
-    margin-bottom: 10%;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
+
 /*orderdetail.css --- shoppingcart.css*/
 
-
-
 /*modal.css*/
+
 .modal {
     color: #697259;
 }
@@ -191,10 +219,11 @@ footer a:hover {
 label {
     margin-top: 10px;
 }
+
 /*modal.css*/
 
-
 /*shoppingcart.css*/
+
 .step1 {
     color: white;
     background-color: #697259;
@@ -237,21 +266,20 @@ label {
     content: '';
 }
 
-.col > a > i {
+.col>a>i {
     color: #697259;
 }
 
-.col > a > i:hover {
-    color:rgb(135, 145, 76);
+.col>a>i:hover {
+    color: rgb(135, 145, 76);
 }
 
 select {
     border-radius: 5px;
-    border:1px solid lightgray;
-    color:gray;
+    border: 1px solid lightgray;
+    color: gray;
     outline: none !important;
-    padding-left:10px;
+    padding-left: 10px;
 }
+
 /*shoppingcart.css*/
-
-
