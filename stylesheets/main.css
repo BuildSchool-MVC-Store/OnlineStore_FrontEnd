@@ -21,6 +21,10 @@ body {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 .secondimage {
     padding: 80px 30px;
     background: rgb(255, 254, 250);
@@ -159,11 +163,13 @@ footer a:hover {
 .navbox {
     border-bottom: 1px solid #DEE2E6;
     line-height: 40px;
+    text-align: center;
 }
 
 .navbox_content {
     border-bottom: 1px solid #DEE2E6;
     line-height: 80px;
+    text-align: center;
 }
 
 #inputState {
@@ -188,6 +194,7 @@ label {
 /*modal.css*/
 
 
+/*shoppingcart.css*/
 .step1 {
     color: white;
     background-color: #697259;
@@ -230,15 +237,7 @@ label {
     content: '';
 }
 
-.a {
-    color:#697259;
-}
-
-.a:hover {
-    text-decoration:none;
-    color: rgb(135, 145, 76);
-}
-
+/*shoppingcart.css*/
 .col > a > i {
     color: #697259;
 }
@@ -247,7 +246,6 @@ label {
     color:rgb(135, 145, 76);
 }
 
-
 select {
     border-radius: 5px;
     border:1px solid lightgray;
@@ -255,39 +253,6 @@ select {
     outline: none !important;
     padding-left:10px;
 }
-
-.col>i:hover {
-    color: rgb(135, 145, 76);
-}
-
-img {
-    max-width: 100%;
-}
-
-p {
-    margin-bottom: 0px;
-}
-
-
-.nav-item>a {
-    padding-top: 10px;
-}
-
-.content {
-    margin: auto;
-    margin-top: 10px;
-}
-
-.content>p {
-    margin-top: 150px;
-}
-
-.content>p>a {
-    margin-left: 430px;
-}
-
-.bmr{
-    margin-right: 150px;
-}
+/*shoppingcart.css*/
 
 

@@ -20,6 +20,10 @@
     color:rgb(135, 145, 76);
 }
 
+p {
+    margin-bottom: 0px;
+}
+
 .right-content p {
     text-align: center;
 }
