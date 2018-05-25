@@ -21,6 +21,10 @@ body {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 .secondimage {
     padding: 80px 30px;
     background: rgb(255, 254, 250);
@@ -102,17 +106,7 @@ footer a:hover {
 }
 /*index.css*/
 
-/*modal.css*/
-.modaltitle {
-    color: #697259;
-}
 
-.modal-content>.col {
-    font-family: Microsoft JhengHei;
-    position: relative;
-    top: 200px;
-}
-/*modal.css*/
 
 /*button.css*/
 .btn {
@@ -123,8 +117,10 @@ footer a:hover {
 
 .btn:hover {
     color:rgb(255, 254, 250);
+    background-color: #7d8570;
 }
 /*button.css*/
+
 
 /*customer.css*/
 .customer a {
@@ -163,17 +159,42 @@ footer a:hover {
 
 
 
-
-.signword {
-    color: grey;
-    font-size: 15px;
-    margin-top: 200px;
+/*orderdetail.css --- shoppingcart.css*/
+.navbox {
+    border-bottom: 1px solid #DEE2E6;
+    line-height: 40px;
+    text-align: center;
 }
 
-.password {
+.navbox_content {
+    border-bottom: 1px solid #DEE2E6;
+    line-height: 80px;
+    text-align: center;
+}
+
+#inputState {
+    width:50%;
+}
+
+.navbox img {
+    margin-bottom: 10%;
+}
+/*orderdetail.css --- shoppingcart.css*/
+
+
+
+/*modal.css*/
+.modal {
+    color: #697259;
+}
+
+label {
     margin-top: 10px;
 }
+/*modal.css*/
 
+
+/*shoppingcart.css*/
 .step1 {
     color: white;
     background-color: #697259;
@@ -216,53 +237,12 @@ footer a:hover {
     content: '';
 }
 
-/*orderdetail.css*/
-.navbox {
-    border-bottom: 1px solid #DEE2E6;
-    text-align: center;
-    line-height: 40px;
-}
-
-.navbox_content {
-    border-bottom: 1px solid #DEE2E6;
-    text-align: center;
-    line-height: 80px;
-}
-/*orderdetail.css*/
-
-
-.text {
-    text-align: left;
-    padding-top: 30px;
-}
-
-.center {
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    color:#697259;
-}
-
-.a {
-    color:#697259;
-}
-
-.a:hover {
-    text-decoration:none;
-    color: rgb(135, 145, 76);
-}
-
 .col > a > i {
     color: #697259;
 }
 
 .col > a > i:hover {
     color:rgb(135, 145, 76);
-}
-
-.center > span {
-    float: left; 
-    padding: 10px 10px;
 }
 
 select {
@@ -272,135 +252,6 @@ select {
     outline: none !important;
     padding-left:10px;
 }
-
-.step3 {
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    text-transform: capitalize;
-    background-color:#697259;
-    padding: 10px 0px;
-    width: 150px;
-    border-radius: 6px;
-    overflow: hidden;
-}
-
-.effect {
-    transition: all 0.2s linear 0s;
-}
-
-.effect:before {
-    content: "BACK";
-    color: #fff;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 100%;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size:25px;
-    transition: all 0.2s linear 0s;
-}
-
-.effect:hover {
-    text-indent: -9999px;
-    text-decoration: none;
-}
-
-.effect:hover:before {
-    top: 0;
-    text-indent: 0;
-}
-
-.nexteffect:before {
-    content: "NEXT";
-    color: #fff;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 100%;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size:25px;
-    transition: all 0.2s linear 0s;
-}
-
-.homeeffect:before {
-    content: "HOME";
-    color: #fff;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 100%;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size:25px;
-    transition: all 0.2s linear 0s;
-}
-
-.orderseffect:before {
-    content: "ORDERS";
-    color: #fff;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 100%;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size:25px;
-    transition: all 0.2s linear 0s;
-}
-
-.col>i:hover {
-    color: rgb(135, 145, 76);
-}
-
-img {
-    max-width: 100%;
-}
-
-p {
-    margin-bottom: 0px;
-}
-
-
-.nav-item>a {
-    padding-top: 10px;
-}
-
-.content {
-    margin: auto;
-    margin-top: 10px;
-}
-
-.content>p {
-    margin-top: 150px;
-}
-
-.content>p>a {
-    margin-left: 430px;
-}
-
-.bmr{
-    margin-right: 150px;
-}
+/*shoppingcart.css*/
 
 
