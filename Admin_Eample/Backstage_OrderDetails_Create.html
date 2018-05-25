@@ -7,23 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>訂單明細資料</title>
+    <title>訂單明細管理_新增</title>
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Page level plugin CSS-->
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
+
+
+    <style>
+        .button {
+            width: 40%;
+            color: snow;
+            background-color: #444;
+            border-radius: 10px;
+            outline: none !important;
+            border: none;
+            margin-left: 150px;
+        }
+
+        .button:hover {
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+
+        .bmr {
+            margin-right: 150px;
+        }
+    </style>
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-        <a class="navbar-brand" href="#">Alan's Shop</a>
+        <a class="navbar-brand" href="Backstage.html">Alan's Shop</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,7 +49,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="Backstage.html">
                         <i class="fa fa-fw fa-dashboard"></i>
                         <span class="nav-link-text">主頁</span>
                     </a>
@@ -44,11 +62,9 @@
                     </a>
                     <ul class="sidenav-second-level collapse" id="collapseComponents">
                         <li>
-                            <a href="#">Navbar</a>
+                            <a href="Backstage_Employee_Select(Delete).html">員工資料</a>
                         </li>
-                        <li>
-                            <a href="#">Cards</a>
-                        </li>
+
                     </ul>
                 </li>
 
@@ -59,11 +75,9 @@
                     </a>
                     <ul class="sidenav-second-level collapse" id="collapseComponents2">
                         <li>
-                            <a href="#">Navbar</a>
+                            <a href="Backstage_Product_Select(Delete).html">商品資料</a>
                         </li>
-                        <li>
-                            <a href="#">Cards</a>
-                        </li>
+
                     </ul>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
@@ -73,11 +87,9 @@
                     </a>
                     <ul class="sidenav-second-level collapse" id="collapseComponents1">
                         <li>
-                            <a href="#">Navbar</a>
+                            <a href="#">訂單資料</a>
                         </li>
-                        <li>
-                            <a href="#">Cards</a>
-                        </li>
+
                     </ul>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
@@ -87,11 +99,9 @@
                     </a>
                     <ul class="sidenav-second-level collapse" id="collapseComponentsˋ">
                         <li>
-                            <a href="#">Navbar</a>
+                            <a href="Backstage_Stock_Select.html">庫存資料</a>
                         </li>
-                        <li>
-                            <a href="#">Cards</a>
-                        </li>
+
                     </ul>
                 </li>
 
@@ -102,11 +112,9 @@
                     </a>
                     <ul class="sidenav-second-level collapse" id="collapseComponentsˇ">
                         <li>
-                            <a href="#">Navbar</a>
+                            <a href="Backstage_Customers_Select.html">客戶資料</a>
                         </li>
-                        <li>
-                            <a href="#">Cards</a>
-                        </li>
+
                     </ul>
                 </li>
 
@@ -167,111 +175,126 @@
                 <li class="breadcrumb-item">
                     <a href="#">主頁</a>
                 </li>
-                <li class="breadcrumb-item active">訂單明細</li>
+                <li class="breadcrumb-item">
+                    <a href="#">訂單</a>
+                </li>
+                <li class="breadcrumb-item active">新增訂單明細資料</li>
             </ol>
-            <div class="card mb-3">
-                <div class="card-header">
-                    <i class="fa fa-table"></i> 訂單明細
+            <div class="row">
+                <div class="col-12">
 
-                </div>
-                <div class="card-body">
+                    <!-- 空白頁面 -->
 
-                    <div class="table-responsive">
-
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-
-                            <thead>
-                                <tr>
-                                    <th>選取</th>
-                                    <th>訂單編號</th>
-                                    <th>產品編號</th>
-                                    <th>產品名稱</th>
-                                    <th>數量</th>
-                                    <th>價錢</th>
-                                    <th>折扣</th>
-                                    <th>尺寸</th>
-                                    <th>顏色</th>
-                                    <th style=" width:35px">修改</th>
-                                    <th style=" width:35px">刪除</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                          </div></td>
-                                    <td>XXXXXXXX</td>
-                                    <td>006</td>
-                                    <td>66</td>
-                                    <td>6</td>
-                                    <td>$ 666</td>
-                                    <td>$ 66</td>
-                                    <td>S</td>
-                                    <td>6666666</td>
-                                    <td class="text-center">
-                                        <i class="fas fa-pencil-alt"></i>
-                                    </td>
-                                    <td class="text-center">
-                                        <i class="fas fa-trash-alt"></i>
-                                        </i>
-                                    </td>
-                                </tr>
-                            </tbody>
-
-                        </table>
+                    <h1 class="mt-2">新增訂單明細資料</h1>
+                    <div class="container-fluid">
 
                     </div>
-                    <div class="mt-2" style=" padding-left: 15px;">
-                        <i class="fas fa-plus " style="font-size:1.5em; color:darkseagreen"></i>
-                    </div>
-                </div>
-                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <span>訂單編號：
+                                    <span>xxxxxxxx</span>
+                                </span>
+                                <div class="container mt-5 text-left">
+                                    <div class="row  ">
+                                        <div class="col-4 mt-2 ">
+                                            <b>產品編號</b>
+                                        </div>
+                                        <div class="col">
+                                            <select style="width:200px;">
+                                                <option>Choose..</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3  ">
+                                        <div class="col-4  mt-2">
+                                            <b>數量</b>
+                                        </div>
+                                        <div class="col">
+                                            <select style="width:200px;">
+                                                <option>Choose..</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3  ">
 
-            </div>
-            <!-- /.container-fluid-->
-            <!-- /.content-wrapper-->
-            <footer class="sticky-footer">
-                <div class="container">
-                    <div class="text-center">
-                        <small>Copyright © Alan's Shop 2018</small>
-                    </div>
-                </div>
-            </footer>
-            <!-- Scroll to Top Button-->
-            <a class="scroll-to-top rounded" href="#page-top">
-                <i class="fa fa-angle-up"></i>
-            </a>
-            <!-- Logout Modal-->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                            <a class="btn btn-primary" href="#">登出</a>
+                                        <div class="col-4  mt-2">
+                                            <b>尺寸</b>
+                                        </div>
+                                        <div class="col">
+                                            <select style="width:200px;">
+                                                <option>Choose..</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3  ">
+                                        <div class="col-4  mt-2">
+                                            <b>顏色</b>
+                                        </div>
+                                        <div class="col">
+                                            <select style="width:200px;">
+                                                <option>Choose..</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4  ">
+                                    <div class="col text-center">
+                                        <a class="btn btn-secondary btn-block" href="#">取消</a>
+                                    </div>
+                                    <div class="col text-center bmr">
+                                        <a class="btn btn-success btn-block" href="#">儲存</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-            <!-- Core plugin JavaScript-->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-            <!-- Page level plugin JavaScript-->
-            <script src="vendor/datatables/jquery.dataTables.js"></script>
-            <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-            <!-- Custom scripts for all pages-->
-            <script src="js/sb-admin.min.js"></script>
-            <!-- Custom scripts for this page-->
-            <script src="js/sb-admin-datatables.min.js"></script>
+            </div>
         </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © Alan's Shop 2018</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="#">登出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    </div>
 </body>
 
 </html>
