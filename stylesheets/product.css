@@ -87,7 +87,7 @@ p {
     content: "NT$ ";
 }
 
-.right-content>.row>.col-4>button {
+.right-content>.row>.col-4>div>button {
     border:1px solid black;
     width:20%;
     background-color: rgb(255, 254, 250);
@@ -95,7 +95,7 @@ p {
     outline: none;
 }
 
-.right-content>.row>.col-4>button:hover {
+.right-content>.row>.col-4>div>button:hover {
     background-color: rgb(233, 233, 233);
     cursor: pointer;
 }
