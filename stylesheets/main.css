@@ -119,6 +119,7 @@ footer a:hover {
 .btn:hover {
     color: rgb(255, 254, 250);
     background-color: #7d8570;
+    cursor: pointer;
 }
 
 /*button.css*/
@@ -200,6 +201,18 @@ footer a:hover {
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
+.ordernav {
+    text-align: center;
+    border-bottom: 1px solid #DEE2E6;
+}
+
+.ordernav_content {
+    text-align: center;
+    border-bottom: 1px solid #DEE2E6;
+    line-height: 60px;
+}
+
 
 /*orderdetail.css --- shoppingcart.css*/
 
