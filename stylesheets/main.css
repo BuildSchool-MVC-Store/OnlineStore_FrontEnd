@@ -99,7 +99,7 @@ footer a:hover {
 }
 
 .gototop a {
-    color: #FFF;
+    color: rgb(35, 35, 35);
 }
 
 .gototop a:hover {
@@ -213,7 +213,6 @@ footer a:hover {
     height:50px;
     line-height: 50px;
 }
-
 
 /*orderdetail.css --- shoppingcart.css*/
 
