@@ -162,41 +162,34 @@ footer a:hover {
 
 /*orderdetail.css --- shoppingcart.css*/
 
-.navbar {
-    line-height: 40px;
-    text-align: center;
+.orderdetails a {
+    color: #697269;
 }
 
-.navbox:first-child {
-    border-top: 1px solid #DEE2E6;
-    border-bottom: 1px solid #DEE2E6;
-    line-height: 40px;
+.orderdetails a:hover {
+    color: rgb(135, 145, 76);
+    text-decoration: none;
+}
+
+.navbar {
     text-align: center;
+    border-bottom:  1px solid #DEE2E6;
 }
 
 .navbox {
+    text-align: center;
     border-bottom: 1px solid #DEE2E6;
     line-height: 40px;
-    text-align: center;
-}
-
-.navbox>.col> {
-    line-height: 150px;
 }
 
 .navbox>.col>p {
     margin: 0;
 }
 
-.navbox .col:nth-child(2) {
-    line-height: 35px;
-    padding-top: 20px;
-}
-
 .navbox_content {
+    text-align: center;
     border-bottom: 1px solid #DEE2E6;
     line-height: 80px;
-    text-align: center;
 }
 
 #inputState {
