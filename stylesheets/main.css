@@ -210,7 +210,8 @@ footer a:hover {
 .ordernav_content {
     text-align: center;
     border-bottom: 1px solid #DEE2E6;
-    line-height: 60px;
+    height:50px;
+    line-height: 50px;
 }
 
 
