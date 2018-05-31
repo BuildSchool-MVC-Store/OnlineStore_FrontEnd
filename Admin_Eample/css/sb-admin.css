@@ -477,3 +477,6 @@ footer.sticky-footer {
   }
 }
 
+select {
+  width:80%;
+}
