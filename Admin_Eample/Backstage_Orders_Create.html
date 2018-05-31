@@ -2,370 +2,348 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>訂單管理_新增</title>
-    <!-- Bootstrap core CSS-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template-->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Page level plugin CSS-->
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>訂單管理_新增</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-        <a class="navbar-brand" href="Backstage.html">Alan's Shop</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                    <a class="nav-link" href="Backstage.html">
-                        <i class="fa fa-fw fa-dashboard"></i>
-                        <span class="nav-link-text">主頁</span>
-                    </a>
-                </li>
-
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-                        <i class="fa fa-fw fa-table"></i>
-                        <span class="nav-link-text">員工管理</span>
-                    </a>
-                    <ul class="sidenav-second-level collapse" id="collapseComponents">
-                        <li>
-                            <a href="Backstage_Employee_Select_Delete.html">員工資料</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents2" data-parent="#exampleAccordion">
-                        <i class="fa fa-fw fa-table"></i>
-                        <span class="nav-link-text">商品管理</span>
-                    </a>
-                    <ul class="sidenav-second-level collapse" id="collapseComponents2">
-                        <li>
-                            <a href="Backstage_Product_Select_Delete.html">商品資料</a>
-                        </li>
-
-                    </ul>
-                </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents1" data-parent="#exampleAccordion">
-                        <i class="fa fa-fw fa-table"></i>
-                        <span class="nav-link-text">訂單管理</span>
-                    </a>
-                    <ul class="sidenav-second-level collapse" id="collapseComponents1">
-                        <li>
-                            <a href="backstage_Orders_Search.html">訂單資料</a>
-                        </li>
-                        <li>
-                            <a href="Backstage_OrderDetails_Select.html">訂單明細資料</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponentsˋ" data-parent="#exampleAccordion">
-                        <i class="fa fa-fw fa-table"></i>
-                        <span class="nav-link-text">庫存管理</span>
-                    </a>
-                    <ul class="sidenav-second-level collapse" id="collapseComponentsˋ">
-                        <li>
-                            <a href="Backstage_Stock_Select.html">庫存資料</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponentsˇ" data-parent="#exampleAccordion">
-                        <i class="fa fa-fw fa-table"></i>
-                        <span class="nav-link-text">客戶管理</span>
-                    </a>
-                    <ul class="sidenav-second-level collapse" id="collapseComponentsˇ">
-                        <li>
-                            <a href="Backstage_Customers_Select.html">客戶資料</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-                        <i class="fa fa-fw fa-file"></i>
-                        <span class="nav-link-text">Example Pages</span>
-                    </a>
-                    <ul class="sidenav-second-level collapse" id="collapseExamplePages">
-                        <li>
-                            <a href="#">Login Page</a>
-                        </li>
-                        <li>
-                            <a href="#">Registration Page</a>
-                        </li>
-                        <li>
-                            <a href="#">Forgot Password Page</a>
-                        </li>
-                        <li>
-                            <a href="#">Blank Page</a>
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
-            <ul class="navbar-nav sidenav-toggler">
-                <li class="nav-item">
-                    <a class="nav-link text-center" id="sidenavToggler">
-                        <i class="fa fa-fw fa-angle-left"></i>
-                    </a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-                        <i class="fa fa-fw fa-sign-out"></i>登出</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="content-wrapper">
-        <div class="container-fluid">
-            <!-- Breadcrumbs-->
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item ">
-                    <a href="#">查詢訂單</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <a href="#">新增訂單</a>
-                </li>
-            </ol>
-            <!-- Example DataTables Card-->
-            <div class="card mb-3">
-                <div class="card-header">
-                    <i class="fa fa-table"></i> 新增訂單
-                </div>
-                <div class="row mt-2">
-                    <div class="col">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="">會員帳號</span>
-                            </div>
-                            <input type="text" class="form-control">
-                            <button type="button" class="btn btn-secondary">新增商品</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-body">
-
-                    <div class="table-responsive">
-
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-
-
-                            <thead>
-                                <tr>
-                                    <th>商品編號</th>
-                                    <th>圖片</th>
-                                    <th>商品名稱</th>
-                                    <th>尺寸</th>
-                                    <th>數量</th>
-                                    <th>顏色</th>
-                                    <th>價格</th>
-                                    <th>刪除</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>XXXXXXXX</td>
-                                    <td>
-                                        <img src="http://fakeimg.pl/50x50?font=bebas" alt="">
-                                    </td>
-                                    <td>短褲</td>
-                                    <td>
-                                        <div class="col">
-                                            <select>
-                                                <option value="">-</option>
-                                                <option value="">S</option>
-                                                <option value="">M</option>
-                                                <option value="">L</option>
-                                            </select>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="col">
-                                            <select>
-                                                <option value="">-</option>
-                                                <option value="">黑</option>
-                                                <option value="">白</option>
-                                                <option value="">藍</option>
-                                            </select>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="col">
-                                            <select>
-                                                <option value="">-</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                            </select>
-                                        </div>
-                                    </td>
-                                    <td>$500</td>
-
-                                    <td class="text-center">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>XXXXXXXX</td>
-                                    <td>
-                                        <img src="http://fakeimg.pl/50x50?font=bebas" alt="">
-                                    </td>
-                                    <td>上衣</td>
-                                    <td>
-                                        <div class="col">
-                                            <select>
-                                                <option value="">-</option>
-                                                <option value="">S</option>
-                                                <option value="">M</option>
-                                                <option value="">L</option>
-                                            </select>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="col">
-                                            <select>
-                                                <option value="">-</option>
-                                                <option value="">黑</option>
-                                                <option value="">白</option>
-                                                <option value="">藍</option>
-                                            </select>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="col">
-                                            <select>
-                                                <option value="">-</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                            </select>
-                                        </div>
-                                    </td>
-                                    <td>$800</td>
-
-                                    <td class="text-center">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-1"></div>
-                    <div class="col mt-2">
-                        <b>商品總價:</b>
-                        <b>1300</b>
-                    </div>
-                    <div class="col mt-2">
-                        <b>付款方式:</b>
-                        <select>
-                            <option value="">-</option>
-                            <option value="">貨到付款</option>
-                            <option value="">超商取貨付款</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-1"></div>
-                    <div class="col mt-2">
-                        <b>物流費:</b>
-                        <b>60</b>
-                    </div>
-                    <div class="col mt-2">
-                        <b>運送方式:</b>
-                        <select>
-                            <option value="">-</option>
-                            <option value="">宅配</option>
-                            <option value="">超商取貨</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-1"></div>
-                    <div class="col  mt-2">
-                        <b>總價:</b>
-                        <b>1360</b>
-                    </div>
-                    <div class="col mt-2 text-right">
-                        <button type="button" class="btn btn-secondary">新增訂單</button>
-                    </div>
-                </div>
-                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-            </div>
-        </div>
-        <!-- /.container-fluid-->
-        <!-- /.content-wrapper-->
-        <footer class="sticky-footer">
-            <div class="container">
-                <div class="text-center">
-                    <small>Copyright © Your Website 2018</small>
-                </div>
-            </div>
-        </footer>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fa fa-angle-up"></i>
-        </a>
-        <!-- Logout Modal-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="login.html">Logout</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-        <!-- Page level plugin JavaScript-->
-        <script src="vendor/datatables/jquery.dataTables.js"></script>
-        <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-        <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin.min.js"></script>
-        <!-- Custom scripts for this page-->
-        <script src="js/sb-admin-datatables.min.js"></script>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="Backstage.html">Alan's Shop</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="Backstage.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">主頁</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">員工管理</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="Backstage_Employee_Select_Delete.html">員工資料</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents2" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">商品管理</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents2">
+            <li>
+              <a href="Backstage_Product_Select_Delete.html">商品資料</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents1" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">訂單管理</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents1">
+            <li>
+              <a href="backstage_Orders_Search.html">訂單資料</a>
+            </li>
+            <li>
+              <a href="Backstage_OrderDetails_Select.html">訂單明細資料</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponentsˋ" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">庫存管理</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponentsˋ">
+            <li>
+              <a href="Backstage_Stock_Select.html">庫存資料</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponentsˇ" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">客戶管理</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponentsˇ">
+            <li>
+              <a href="Backstage_Customers_Select.html">客戶資料</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Example Pages</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+            <li>
+              <a href="#">Login Page</a>
+            </li>
+            <li>
+              <a href="#">Registration Page</a>
+            </li>
+            <li>
+              <a href="#">Forgot Password Page</a>
+            </li>
+            <li>
+              <a href="#">Blank Page</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>登出</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item ">
+          <a href="#">查詢訂單</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#">新增訂單</a>
+        </li>
+      </ol>
+      <!-- Example DataTables Card-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> 新增訂單
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="">會員帳號</span>
+              </div>
+              <input type="text" class="form-control">
+              <button type="button" class="btn btn-secondary">新增商品</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>商品編號</th>
+                  <th>圖片</th>
+                  <th>商品名稱</th>
+                  <th>尺寸</th>
+                  <th>數量</th>
+                  <th>顏色</th>
+                  <th>價格</th>
+                  <th>刪除</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>XXXXXXXX</td>
+                  <td>
+                    <img src="http://fakeimg.pl/50x50?font=bebas" alt="">
+                  </td>
+                  <td>短褲</td>
+                  <td>
+                    <div class="col">
+                      <select>
+                        <option value="">-</option>
+                        <option value="">S</option>
+                        <option value="">M</option>
+                        <option value="">L</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="col">
+                      <select>
+                        <option value="">-</option>
+                        <option value="">黑</option>
+                        <option value="">白</option>
+                        <option value="">藍</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="col">
+                      <select>
+                        <option value="">-</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>$500</td>
+                  <td class="text-center">
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>XXXXXXXX</td>
+                  <td>
+                    <img src="http://fakeimg.pl/50x50?font=bebas" alt="">
+                  </td>
+                  <td>上衣</td>
+                  <td>
+                    <div class="col">
+                      <select>
+                        <option value="">-</option>
+                        <option value="">S</option>
+                        <option value="">M</option>
+                        <option value="">L</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="col">
+                      <select>
+                        <option value="">-</option>
+                        <option value="">黑</option>
+                        <option value="">白</option>
+                        <option value="">藍</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="col">
+                      <select>
+                        <option value="">-</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>$800</td>
+                  <td class="text-center">
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-1"></div>
+          <div class="col mt-2">
+            <b>商品總價:</b>
+            <b>1300</b>
+          </div>
+          <div class="col mt-2">
+            <b>付款方式:</b>
+            <select>
+              <option value="">-</option>
+              <option value="">貨到付款</option>
+              <option value="">超商取貨付款</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-1"></div>
+          <div class="col mt-2">
+            <b>物流費:</b>
+            <b>60</b>
+          </div>
+          <div class="col mt-2">
+            <b>運送方式:</b>
+            <select>
+              <option value="">-</option>
+              <option value="">宅配</option>
+              <option value="">超商取貨</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-1"></div>
+          <div class="col  mt-2">
+            <b>總價:</b>
+            <b>1360</b>
+          </div>
+          <div class="col mt-2 text-right">
+            <button type="button" class="btn btn-secondary">新增訂單</button>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2018</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+  </div>
 
 </body>
 
