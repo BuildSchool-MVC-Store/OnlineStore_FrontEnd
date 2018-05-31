@@ -476,3 +476,11 @@ footer.sticky-footer {
     width: calc(100% - 55px);
   }
 }
+
+select {
+  width:80%;
+}
+
+.bmr {
+  margin-right: 150px;
+}
