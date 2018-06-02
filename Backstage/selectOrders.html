@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Backstage &dash; JUJUBE</title>
+    <meta name="description" content="Free Bootstrap 4 Admin Theme | Pike Admin">
+    <meta name="author" content="Pike Web Development - https://www.pikephp.com">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Font Awesome CSS -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- BEGIN CSS for this page -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" />
+    <!-- END CSS for this page -->
+
+</head>
+
+<body class="adminbody">
+
+    <div id="main">
+
+        <!-- top bar navigation -->
+        <div class="headerbar">
+
+            <!-- LOGO -->
+            <div class="headerbar-left">
+                <a href="index.html" class="logo">
+                    <span>JUJUBE</span>
+                </a>
+            </div>
+
+            <nav class="navbar-custom">
+
+                <ul class="list-inline float-right mb-0">
+
+                    <li class="list-inline-item dropdown notif">
+                        <a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <img src="assets/images/avatars/admin.png" alt="Profile image" class="avatar-rounded">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            <!-- item-->
+                            <div class="dropdown-item noti-title">
+                                <h5 class="text-overflow">
+                                    <small>Hello, admin</small>
+                                </h5>
+                            </div>
+
+                            <!-- item-->
+                            <a href="pro-profile.html" class="dropdown-item notify-item">
+                                <i class="fas fa-user"></i>
+                                <span>Profile</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item notify-item">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Logout</span>
+                            </a>
+
+                            <!-- item-->
+                            <a target="_blank" href="https://www.pikeadmin.com" class="dropdown-item notify-item">
+                                <i class="fas fa-home"></i>
+                                <span>JUJUBE</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="list-inline menu-left mb-0">
+                    <li class="float-left">
+                        <button class="button-menu-mobile open-left">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+        <!-- End Navigation -->
+
+
+        <!-- Left Sidebar -->
+        <div class="left main-sidebar">
+
+            <div class="sidebar-inner leftscroll">
+
+                <div id="sidebar-menu">
+
+                    <ul>
+                        <li class="submenu">
+                            <a href="index.html">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span> Dashboard </span>
+                            </a>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="charts.html">
+                                <i class="fa fa-fw fa-area-chart"></i>
+                                <span> Charts </span>
+                            </a>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="selectEmployees.html">
+                                <i class="fas fa-users-cog"></i>
+                                <span> Employees </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="createEmployees.html">Create</a>
+                                </li>
+                                <li>
+                                    <a href="updateEmployees.html">Update</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="selectProducts.html">
+                                <i class="fas fa-box"></i>
+                                <span> Products </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="createProducts.html">Create</a>
+                                </li>
+                                <li>
+                                    <a href="updateProducts.html">Update</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="selectStocks.html">
+                                <i class="fas fa-boxes"></i>
+                                <span> Stocks </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="createStocks.html">Create</a>
+                                </li>
+                                <li>
+                                    <a href="updateStocks.html">Update</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <a class="active" href="selectOrders.html">
+                                <i class="far fa-file"></i>
+                                <span> Orders </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="createOrders.html">Create</a>
+                                </li>
+                                <li>
+                                    <a href="updateOrders.html">Update</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="selectOrderDetails.html">
+                                <i class="far fa-file-alt"></i>
+                                <span> Order Details </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="createOrderDetails.html">Create</a>
+                                </li>
+                                <li>
+                                    <a href="updateOrderDetails.html">Update</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="selectCustomers.html">
+                                <i class="fas fa-users"></i>
+                                <span> Customers </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+            </div>
+
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="content-page">
+
+            <!-- Start content -->
+            <div class="content">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="breadcrumb-holder">
+                                <h1 class="main-title float-left">Orders</h1>
+                                <ol class="breadcrumb float-right">
+                                    <li class="breadcrumb-item">Home</li>
+                                    <li class="breadcrumb-item">Orders</li>
+                                    <li class="breadcrumb-item active">Orders</li>
+                                </ol>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="card mb-3 mt-3">
+                                <div class="card-header">
+                                    <h3>
+                                        <i class="far fa-file"></i> Orders</h3>
+                                </div>
+
+                                <div class="card-body">
+
+                                    <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                        <thead>
+                                            <tr>
+                                                <th>Number</th>
+                                                <th>Account</th>
+                                                <th>Order Date</th>
+                                                <th>Status</th>
+                                                <th>Ship Date</th>
+                                                <th>Total</th>
+                                                <th>Delivery Method</th>
+                                                <th>Payment Method</th>
+                                                <th>Update</th>
+                                                <th>Delete</th>
+                                                <th>Ready Ship?</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>paperhuang</td>
+                                                <td>2018-06-02</td>
+                                                <td>
+                                                    <select class="form-control">
+                                                        <option>備貨中</option>
+                                                        <option>已出貨</option>
+                                                        <option>已取貨</option>
+                                                    </select>
+                                                </td>
+                                                <td>2018-06-05</td>
+                                                <td>NT$ 1050</td>
+                                                <td>
+                                                    <select class="form-control">
+                                                        <option>宅配</option>
+                                                        <option>超商取貨</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select class="form-control">
+                                                        <option>貨到付款</option>
+                                                        <option>超商取貨付款</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <i class="far fa-edit"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <i class="far fa-trash-alt"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-primary" href="#" role="button" id="ship">SHIP</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <!-- end card-->
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="card mb-3 mt-3">
+                                <div class="card-header">
+                                    <h3>
+                                        <i class="far fa-file"></i> Orders</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                <a class="nav-link active" id="v-pills-allorders-tab" data-toggle="pill" href="#v-pills-allorders" role="tab" aria-controls="v-pills-allorders"
+                                                    aria-selected="true">所有訂單</a>
+                                                <a class="nav-link" id="v-pills-setup-tab" data-toggle="pill" href="#v-pills-setup" role="tab" aria-controls="v-pills-setup"
+                                                    aria-selected="false">剛成立的訂單</a>
+                                                <a class="nav-link" id="v-pills-processing-tab" data-toggle="pill" href="#v-pills-processing" role="tab" aria-controls="v-pills-processing"
+                                                    aria-selected="false">處理中的訂單</a>
+                                                <a class="nav-link" id="v-pills-shipped-tab" data-toggle="pill" href="#v-pills-shipped" role="tab" aria-controls="v-pills-shipped"
+                                                    aria-selected="false">已出貨的訂單</a>
+                                                <a class="nav-link" id="v-pills-complete-tab" data-toggle="pill" href="#v-pills-complete" role="tab" aria-controls="v-pills-complete"
+                                                    aria-selected="false">已完成的訂單</a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="tab-content" id="v-pills-tabContent">
+                                                <div class="tab-pane fade show active" id="v-pills-allorders" role="tabpanel" aria-labelledby="v-pills-allorders-tab">
+                                                    所有訂單
+                                                    <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Number</th>
+                                                                <th>Account</th>
+                                                                <th>Order Date</th>
+                                                                <th>Status</th>
+                                                                <th>Ship Date</th>
+                                                                <th>Total</th>
+                                                                <th>Delivery Method</th>
+                                                                <th>Payment Method</th>
+                                                                <th>Update</th>
+                                                                <th>Delete</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>paperhuang</td>
+                                                                <td>2018-06-02</td>
+                                                                <td>備貨中</td>
+                                                                <td>-</td>
+                                                                <td>NT$ 1050</td>
+                                                                <td>超商取貨</td>
+                                                                <td>超商取貨付款</td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-edit"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>abcdefgh</td>
+                                                                <td>2018-06-03</td>
+                                                                <td>已完成</td>
+                                                                <td>2018-06-05</td>
+                                                                <td>NT$ 2000</td>
+                                                                <td>宅配</td>
+                                                                <td>超商付款</td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-edit"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-setup" role="tabpanel" aria-labelledby="v-pills-setup-tab">
+                                                    剛成立的訂單
+                                                    <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Number</th>
+                                                                <th>Account</th>
+                                                                <th>Order Date</th>
+                                                                <th>Status</th>
+                                                                <th>Total</th>
+                                                                <th>Delivery Method</th>
+                                                                <th>Payment Method</th>
+                                                                <th>Update</th>
+                                                                <th>Delete</th>
+                                                                <th>Ship</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>paperhuang</td>
+                                                                <td>2018-06-02</td>
+                                                                <td>備貨中</td>
+                                                                <td>NT$ 1050</td>
+                                                                <td>宅配</td>
+                                                                <td>貨到付款</td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-edit"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#" role="button" id="example3">
+                                                                        <i class="far fa-check-circle"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-processing" role="tabpanel" aria-labelledby="v-pills-processing-tab">
+                                                    處理中的訂單
+                                                    <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Number</th>
+                                                                <th>Account</th>
+                                                                <th>Order Date</th>
+                                                                <th>Status</th>
+                                                                <th>Total</th>
+                                                                <th>Delivery Method</th>
+                                                                <th>Payment Method</th>
+                                                                <th>Update</th>
+                                                                <th>Delete</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>paperhuang</td>
+                                                                <td>2018-06-02</td>
+                                                                <td>備貨中</td>
+                                                                <td>NT$ 1050</td>
+                                                                <td>宅配</td>
+                                                                <td>貨到付款</td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-edit"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-shipped" role="tabpanel" aria-labelledby="v-pills-shipped-tab">
+                                                    已出貨的訂單
+                                                    <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Number</th>
+                                                                <th>Account</th>
+                                                                <th>Order Date</th>
+                                                                <th>Status</th>
+                                                                <th>Ship Date</th>
+                                                                <th>Total</th>
+                                                                <th>Delivery Method</th>
+                                                                <th>Payment Method</th>
+                                                                <th>Update</th>
+                                                                <th>Delete</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>paperhuang</td>
+                                                                <td>2018-06-02</td>
+                                                                <td>已出貨</td>
+                                                                <td>2018-06-05</td>
+                                                                <td>NT$ 1050</td>
+                                                                <td>超商取貨</td>
+                                                                <td>貨到付款</td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-edit"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-complete" role="tabpanel" aria-labelledby="v-pills-complete-tab">
+                                                    已完成的訂單
+                                                    <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Number</th>
+                                                                <th>Account</th>
+                                                                <th>Order Date</th>
+                                                                <th>Status</th>
+                                                                <th>Ship Date</th>
+                                                                <th>Total</th>
+                                                                <th>Delivery Method</th>
+                                                                <th>Payment Method</th>
+                                                                <th>Update</th>
+                                                                <th>Delete</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>paperhuang</td>
+                                                                <td>2018-06-02</td>
+                                                                <td>已完成</td>
+                                                                <td>2018-06-05</td>
+                                                                <td>NT$ 1050</td>
+                                                                <td>宅配</td>
+                                                                <td>超商付款</td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-edit"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- end card-->
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="card mb-3 mt-3">
+                                <div class="card-header">
+                                    <h3>
+                                        <i class="far fa-file"></i> Orders</h3>
+                                </div>
+
+                                <div class="card-body">
+
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="pills-allorders-tab" data-toggle="pill" href="#pills-allorders" role="tab" aria-controls="pills-allorders"
+                                                aria-selected="true">所有訂單</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-setup-tab" data-toggle="pill" href="#pills-setup" role="tab" aria-controls="pills-setup" aria-selected="false">剛成立的訂單</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-processing-tab" data-toggle="pill" href="#pills-processing" role="tab" aria-controls="pills-processing"
+                                                aria-selected="false">處理中的訂單</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-shipped-tab" data-toggle="pill" href="#pills-shipped" role="tab" aria-controls="pills-shipped"
+                                                aria-selected="false">已出貨的訂單</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-complete-tab" data-toggle="pill" href="#pills-complete" role="tab" aria-controls="pills-complete"
+                                                aria-selected="false">已完成的訂單</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-allorders" role="tabpanel" aria-labelledby="pills-allorders-tab">
+                                            所有訂單
+                                            <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Number</th>
+                                                        <th>Account</th>
+                                                        <th>Order Date</th>
+                                                        <th>Status</th>
+                                                        <th>Ship Date</th>
+                                                        <th>Total</th>
+                                                        <th>Delivery Method</th>
+                                                        <th>Payment Method</th>
+                                                        <th>Update</th>
+                                                        <th>Delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>paperhuang</td>
+                                                        <td>2018-06-02</td>
+                                                        <td>備貨中</td>
+                                                        <td>-</td>
+                                                        <td>NT$ 1050</td>
+                                                        <td>超商取貨</td>
+                                                        <td>超商取貨付款</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-edit"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-trash-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>abcdefgh</td>
+                                                        <td>2018-06-03</td>
+                                                        <td>已完成</td>
+                                                        <td>2018-06-05</td>
+                                                        <td>NT$ 2000</td>
+                                                        <td>宅配</td>
+                                                        <td>超商付款</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-edit"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-trash-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-setup" role="tabpanel" aria-labelledby="pills-setup-tab">
+                                            剛成立的訂單
+                                            <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Number</th>
+                                                        <th>Account</th>
+                                                        <th>Order Date</th>
+                                                        <th>Status</th>
+                                                        <th>Total</th>
+                                                        <th>Delivery Method</th>
+                                                        <th>Payment Method</th>
+                                                        <th>Update</th>
+                                                        <th>Delete</th>
+                                                        <th>Ship</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>paperhuang</td>
+                                                        <td>2018-06-02</td>
+                                                        <td>備貨中</td>
+                                                        <td>NT$ 1050</td>
+                                                        <td>宅配</td>
+                                                        <td>貨到付款</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-edit"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-trash-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" role="button" id="example3">
+                                                                <i class="far fa-check-circle"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-processing" role="tabpanel" aria-labelledby="pills-processing-tab">
+                                            處理中的訂單
+                                            <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Number</th>
+                                                        <th>Account</th>
+                                                        <th>Order Date</th>
+                                                        <th>Status</th>
+                                                        <th>Total</th>
+                                                        <th>Delivery Method</th>
+                                                        <th>Payment Method</th>
+                                                        <th>Update</th>
+                                                        <th>Delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>paperhuang</td>
+                                                        <td>2018-06-02</td>
+                                                        <td>備貨中</td>
+                                                        <td>NT$ 1050</td>
+                                                        <td>宅配</td>
+                                                        <td>貨到付款</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-edit"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-trash-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-shipped" role="tabpanel" aria-labelledby="pills-shipped-tab">
+                                            已出貨的訂單
+                                            <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Number</th>
+                                                        <th>Account</th>
+                                                        <th>Order Date</th>
+                                                        <th>Status</th>
+                                                        <th>Ship Date</th>
+                                                        <th>Total</th>
+                                                        <th>Delivery Method</th>
+                                                        <th>Payment Method</th>
+                                                        <th>Update</th>
+                                                        <th>Delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>paperhuang</td>
+                                                        <td>2018-06-02</td>
+                                                        <td>已出貨</td>
+                                                        <td>2018-06-05</td>
+                                                        <td>NT$ 1050</td>
+                                                        <td>超商取貨</td>
+                                                        <td>貨到付款</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-edit"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-trash-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-complete" role="tabpanel" aria-labelledby="pills-complete-tab">
+                                            已完成的訂單
+                                            <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Number</th>
+                                                        <th>Account</th>
+                                                        <th>Order Date</th>
+                                                        <th>Status</th>
+                                                        <th>Ship Date</th>
+                                                        <th>Total</th>
+                                                        <th>Delivery Method</th>
+                                                        <th>Payment Method</th>
+                                                        <th>Update</th>
+                                                        <th>Delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>paperhuang</td>
+                                                        <td>2018-06-02</td>
+                                                        <td>已完成</td>
+                                                        <td>2018-06-05</td>
+                                                        <td>NT$ 1050</td>
+                                                        <td>宅配</td>
+                                                        <td>超商付款</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-edit"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <i class="far fa-trash-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- end card-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END content-page -->
+
+
+        <footer class="footer">
+            <p class="text-center mt-1 mb-1">
+                Copyright &copy; JUJUBE 2018
+            </p>
+        </footer>
+
+    </div>
+    <!-- END main -->
+
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/jquery.blockUI.js"></script>
+    <script src="assets/js/jquery.nicescroll.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/pikeadmin.js"></script>
+
+    <!-- BEGIN Java Script for this page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Counter-Up-->
+    <script src="assets/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // data-tables
+            $('#example1').DataTable();
+
+            // counter-up
+            $('.counter').counterUp({
+                delay: 10,
+                time: 600
+            });
+        });
+    </script>
+
+    <!--this page-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#ship').click(function () {
+                swal({
+                        title: "Are you sure?",
+                        icon: "warning",
+                        buttons: true,
+                        dangerMode: true,
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            swal("Products had shipped!", {
+                                icon: "success",
+                            });
+                        } else {
+                            swal("Products are waiting...");
+                        }
+                    });
+            });
+
+            $('#example3').click(function () {
+                swal("訂單狀態更改為處理中", "Order processing...", "success");
+            });
+        })
+    </script>
+</body>
+
+</html>
