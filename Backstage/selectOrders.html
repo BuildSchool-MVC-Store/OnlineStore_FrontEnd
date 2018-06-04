@@ -268,8 +268,8 @@
                                     </ul>
                                     <div class="tab-content" id="pills-tabContent">
                                         <div class="tab-pane fade show active" id="pills-allorders" role="tabpanel" aria-labelledby="pills-allorders-tab">
-                                            所有訂單
-                                            <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                          
+                                            <table id="allorders" class="table table-bordered table-responsive-xl table-hover display">
                                                 <thead>
                                                     <tr>
                                                         <th>Number</th>
@@ -282,6 +282,7 @@
                                                         <th>Payment Method</th>
                                                         <th>Update</th>
                                                         <th>Delete</th>
+                                                        <th>Skip</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -304,6 +305,11 @@
                                                                 <i class="far fa-trash-alt"></i>
                                                             </a>
                                                         </td>
+                                                        <td>
+                                                                <a class="btn btn-sm" href="#" style="background-color:rgb(122, 209, 173)" role="button" id="skip">
+                                                                    <i class="fas fa-arrow-right" style="color:white"></i>
+                                                                </a>
+                                                            </td>
                                                     </tr>
                                                     <tr>
                                                         <td>1</td>
@@ -324,13 +330,14 @@
                                                                 <i class="far fa-trash-alt"></i>
                                                             </a>
                                                         </td>
+                                                        <td>-</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                         <div class="tab-pane fade" id="pills-setup" role="tabpanel" aria-labelledby="pills-setup-tab">
-                                            剛成立的訂單
-                                            <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                        
+                                            <table id="setup" class="table table-bordered table-responsive-xl table-hover display">
                                                 <thead>
                                                     <tr>
                                                         <th>Number</th>
@@ -342,7 +349,7 @@
                                                         <th>Payment Method</th>
                                                         <th>Update</th>
                                                         <th>Delete</th>
-                                                        <th>Ship</th>
+                                                        <th>Skip</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -365,8 +372,8 @@
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <a class="btn btn-dark btn-sm" href="#" role="button" id="example3">
-                                                                <i class="far fa-check-circle"></i>
+                                                            <a class="btn btn-sm" href="#" style="background-color:rgb(122, 209, 173)" role="button" id="skip">
+                                                                <i class="fas fa-arrow-right" style="color:white"></i>
                                                             </a>
                                                         </td>
                                                     </tr>
@@ -375,8 +382,8 @@
 
                                         </div>
                                         <div class="tab-pane fade" id="pills-processing" role="tabpanel" aria-labelledby="pills-processing-tab">
-                                            處理中的訂單
-                                            <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                       
+                                            <table id="processing" class="table table-bordered table-responsive-xl table-hover display">
                                                 <thead>
                                                     <tr>
                                                         <th>Number</th>
@@ -388,6 +395,7 @@
                                                         <th>Payment Method</th>
                                                         <th>Update</th>
                                                         <th>Delete</th>
+                                                        <th>Skip</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -410,13 +418,18 @@
                                                                 <i class="far fa-trash-alt"></i>
                                                             </a>
                                                         </td>
+                                                        <td>
+                                                                <a class="btn btn-sm" href="#" style="background-color:rgb(122, 209, 173)" role="button" id="skip">
+                                                                    <i class="fas fa-arrow-right" style="color:white"></i>
+                                                                </a>
+                                                            </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                         <div class="tab-pane fade" id="pills-shipped" role="tabpanel" aria-labelledby="pills-shipped-tab">
-                                            已出貨的訂單
-                                            <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+                                         
+                                            <table id="shipped" class="table table-bordered table-responsive-xl table-hover display">
                                                 <thead>
                                                     <tr>
                                                         <th>Number</th>
@@ -429,6 +442,7 @@
                                                         <th>Payment Method</th>
                                                         <th>Update</th>
                                                         <th>Delete</th>
+                                                        <th>Skip</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -451,13 +465,18 @@
                                                                 <i class="far fa-trash-alt"></i>
                                                             </a>
                                                         </td>
+                                                        <td>
+                                                                <a class="btn btn-sm" href="#" style="background-color:rgb(122, 209, 173)" role="button" id="skip">
+                                                                    <i class="fas fa-arrow-right" style="color:white"></i>
+                                                                </a>
+                                                            </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                         <div class="tab-pane fade" id="pills-complete" role="tabpanel" aria-labelledby="pills-complete-tab">
-                                            已完成的訂單
-                                            <table id="example1" class="table table-bordered table-responsive-xl table-hover display">
+ 
+                                            <table id="complete" class="table table-bordered table-responsive-xl table-hover display">
                                                 <thead>
                                                     <tr>
                                                         <th>Number</th>
@@ -546,7 +565,11 @@
     <script>
         $(document).ready(function () {
             // data-tables
-            $('#example1').DataTable();
+            $('#allorders').DataTable();
+            $('#setup').DataTable();
+            $('#processing').DataTable();
+            $('#shipped').DataTable();
+            $('#complete').DataTable();
 
             // counter-up
             $('.counter').counterUp({
@@ -579,7 +602,7 @@
                     });
             });
 
-            $('#example3').click(function () {
+            $('#skip').click(function () {
                 swal("訂單狀態更改為處理中", "Order processing...", "success");
             });
         })
