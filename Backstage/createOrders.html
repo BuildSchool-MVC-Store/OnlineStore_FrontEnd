@@ -252,7 +252,7 @@
                                                 <th>Size</th>
                                                 <th>Color</th>
                                                 <th>Quantity</th>
-                                                <th></th>
+                                                <th>Add</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -288,9 +288,7 @@
                                                     </select>
                                                 </td>
                                                 <td>
-                                                    <a href="#">
-                                                        <i class="fa fa-plus"></i>
-                                                    </a>
+                                                    <a class="btn btn-sm" href="#" role="button" style="background-color: #FFAEAE"><i class="fa fa-plus" style="color:white"></i></a>
                                                 </td>
                                             </tr>
 
@@ -319,9 +317,7 @@
                                                 <td>10</td>
                                                 <td>NT$ 5050</td>
                                                 <td>
-                                                    <a href="#">
-                                                        <i class="far fa-trash-alt"></i>
-                                                    </a>
+                                                    <a id="del" class="btn btn-danger btn-sm" href="#" role="button"> <i class="far fa-trash-alt"></i></a>
                                                 </td>
                                             </tr>
 
@@ -364,7 +360,7 @@
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text" id="basic-addon1">Account</span>
                                                         </div>
-                                                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                                                        <input type="text" class="form-control" placeholder="Enter Account" aria-label="" aria-describedby="basic-addon1">
                                                         <div class="input-group-append">
                                                             <button class="btn btn-primary" type="button">Create!</button>
                                                         </div>
@@ -432,6 +428,33 @@
             });
         });
     </script>
+
+    <!-- Java Script for this page -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#del').click(function () {
+                swal({
+                        title: "Are you sure?",
+                        text: "Once deleted, you will add it again!",
+                        icon: "warning",
+                        buttons: true,
+                        dangerMode: true,
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            swal("This product has been deleted!", {
+                                icon: "success",
+                            });
+                        } else {
+                            swal("This product is still here.");
+                        }
+                    });
+            });
+        });
+    </script>
+    <!-- END Java Script for this page -->
 </body>
 
 </html>
